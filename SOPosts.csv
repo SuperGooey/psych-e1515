@@ -1,0 +1,2592 @@
+Id,Score,AcceptedAnswerId,AnswerCount,CommentCount,CreationDate,ClosedDate,OwnerUserId,Body
+"56273458","0","","","0","2019-05-23 10:41:23","","1648920","<p>I highly discourage this approach.</p>
+
+<p>Parsing logs is an old task, and there are many tools out there that are more than capable of doing this in an efficient way.</p>
+
+<p>For me personally, I had success with <a href=""https://www.fluentd.org/"" rel=""nofollow noreferrer"">Fluentd - Open Source Data Collector</a>, but there are more tools, depending on your specific needs.</p>
+
+<p>The community, e.g, the amount, and quality of plugins/addons to the tool, is relevant when choosing the tool.</p>
+
+<p>So if googling <a href=""https://www.google.com/search?q=fluntd+prometheus"" rel=""nofollow noreferrer"">fluentd prometheus</a> gets you some results from github and the developer itself - that might be your right course of action.</p>
+"
+"56273459","0","","","0","2019-05-23 10:41:34","","8757883","<p>It would be best if you shared some code, so that we can help with your specific scenario. Having said that, i interpret from your question that you only need scroll for the body section; the header &amp; footer are fixed.</p>
+
+<p>check the following code snippet </p>
+
+<p><div class=""snippet"" data-lang=""js"" data-hide=""false"" data-console=""true"" data-babel=""false"">
+<div class=""snippet-code"">
+<pre class=""snippet-code-css lang-css prettyprint-override""><code>.headerArea,
+.footerArea {
+  height: 10vh;
+  background: lightpink;
+  text-align: center;
+  font-weight: 700;
+}
+
+.bodyArea {
+  height: 80vh;
+  background: lightblue;
+  overflow-y: scroll
+}</code></pre>
+<pre class=""snippet-code-html lang-html prettyprint-override""><code>&lt;link rel=""stylesheet"" href=""https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css""&gt;
+&lt;script src=""https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js""&gt;&lt;/script&gt;
+&lt;script src=""https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js""&gt;&lt;/script&gt;
+&lt;script src=""https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js""&gt;&lt;/script&gt;
+
+&lt;div class='headerArea'&gt; HEADER &lt;/div&gt;
+&lt;div class='bodyArea'&gt;
+  ""Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+  in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."" ""Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+  magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+  Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui
+  dolorem eum fugiat quo voluptas nulla pariatur?"" ""At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+  similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+  placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum
+  hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat."" What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+  been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+  essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Why do we use it?
+  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here,
+  content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions
+  have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
+  from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+  classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of ""de Finibus Bonorum et Malorum"" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+  very popular during the Renaissance. The first line of Lorem Ipsum, ""Lorem ipsum dolor sit amet.."", comes from a line in section 1.10.32. The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32
+  and 1.10.33 from ""de Finibus Bonorum et Malorum"" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham. Where can I get some? There are many variations of passages of Lorem
+  Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing
+  hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of
+  model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+
+&lt;/div&gt;
+&lt;div class='footerArea'&gt; FOOTER &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</p>
+"
+"56273461","0","","0","6","2019-05-23 10:41:37","","5539099","<p>I am having a very weird problem on my Java hosting. It seems to be reverting changes I have made. I have deleted all cache and all ROOT.war files. Exported a new ROOT.war file and uploaded it to the server and started the JVM. I usually do this late at night so no users are active.</p>
+
+<p>Test and all seems to be perfect. Then the following day my users start using the system and run into all the problems I had the previous day before making the changes.</p>
+
+<p>I see hundreds of these files created under the tomcat directory:</p>
+
+<p><code>jvm.pid.bkp_2019-05-21-071002</code></p>
+
+<p>Such a file is generated every 10 minutes. It seems like a backup or restore is done and my changes are replaced with old code. I have no idea what the cause could be. Any of you have any idea?</p>
+"
+"56273463","3","","","0","2019-05-23 10:41:42","","3628942","<blockquote>
+<pre><code>mov AH,1
+int 21h
+mov A,Ax
+</code></pre>
+</blockquote>
+
+<p>This DOS function returns a <strong>character</strong> in <code>AL</code>. You should not store the whole of <code>AX</code> as your first number! What you need is:</p>
+
+<pre><code>mov ah, 1
+int 21h
+sub al, '0'   ;Convert to a true number, no longer a character
+mov A, al
+</code></pre>
+
+<p>Same for your second number.</p>
+
+<hr>
+
+<blockquote>
+<pre><code>cmp Ax,Bx
+</code></pre>
+</blockquote>
+
+<p>Compare bytes here. Write <code>cmp al, bl</code>.</p>
+
+<hr>
+
+<blockquote>
+<pre><code>MOV AH,0D
+DIV AL
+CMP AH,0D
+JE EXIT
+</code></pre>
+</blockquote>
+
+<p>It's fine to zero extend the dividend but think a moment about what <code>DIV AL</code> does. It will divide <code>AX</code> by <code>AL</code>. Since <code>AL</code> is just the low portion of <code>AX</code>, this division will always return a quotient of 1 with a 0 remainder. Not very useful because the EXIT will always be chosen.</p>
+
+<hr>
+
+<blockquote>
+<pre><code>EXIT:
+MOV Dx,Ax
+MOV AH,2
+;MOV DL,AL
+INT 21H
+</code></pre>
+</blockquote>
+
+<p>To display a result you have to convert it back into a character. You must add 48 to do this:</p>
+
+<pre><code>EXIT:
+ mov dl, al
+ add dl, '0'
+ mov ah, 02h
+ int 21h
+</code></pre>
+"
+"56273464","0","56274423","1","0","2019-05-23 10:41:44","","7160592","<p>Requirement: Click on submenu from Actions dropdown which looks like below and each element is in different iframes</p>
+
+<p>Selenium 3.141</p>
+
+<p>Actions > Menu > Submenu > click on submenu item </p>
+
+<p>Actions - iframe1 > Menu - iframe2 > Submenu - iframe3</p>
+
+<p>All these frames are inside one another iframe3 is inside iframe2 and iframe2 is inside iframe1</p>
+
+<p>Dropdown opens when I click on 'Actions' and closes when I try to click on other and hence script fails with an exception element not found to click</p>
+
+<pre><code>driver.findElement(By.xpath(""//*[contains(@title, 'Actions')]"")).click();
+switchToFrame(""listHidden"");
+driver.findElement(By.id(""PMCProjectCreateMenu"")).click();
+switchToFrame(""submenu"");
+driver.findElement(By.xpath(""//*[contains(label,'Create New...')]""));
+
+or
+
+//in below case how to switch to iframes
+Actions action = new Actions(driver);
+WebElement actionMenu= driver.findElement(By.xpath(""//*[contains(@title, 'Actions')]""));
+action.moveToElement(actionMenu).moveToElement(driver.findElement(By.id(""PMCProjectCreateMenu""))).moveToElement(driver.findElement(By.xpath(""//*[contains(label,'Create New...')]""))).click().build().perform();```
+
+Expected : To navigate through actions &gt; menu &gt; submenu and click on submenu
+Actual: Clicks on actions and fails to continue
+
+
+</code></pre>
+"
+"56273465","1","56273499","2","0","2019-05-23 10:41:45","","11430866","<p>I want to extract weekdays present in string into a list. Appreciate if some one could suggest the easy way out.</p>
+
+<pre><code>strg &lt;- 'Consumer   bot  --At 08:00 PM, only on Monday, Tuesday, Wednesday, Thursday, and Friday'
+</code></pre>
+
+<p>Expecting result to be in list like: <code>""Monday"" ""Tuesday"" ""Wednesday"" ""Thursday"" ""Friday""</code></p>
+"
+"56273466","3","","","1","2019-05-23 10:41:48","","10791371","<pre><code>&lt;?php
+//Loading all php files into of functions/ folder 
+
+$folder =   ""./functions/""; 
+$files = glob($folder.""*.php""); // return array files
+
+ foreach($files as $phpFile){   
+     require_once(""$phpFile""); 
+}
+</code></pre>
+"
+"56273467","0","","0","4","2019-05-23 10:41:49","","9083691","<p>I need to draw some scene with white ""fog of war"". I did in init method:</p>
+
+<pre><code>setZOrderOnTop(true)
+holder.setFormat(PixelFormat.TRANSLUCENT)
+</code></pre>
+
+<p>That works but my fab-s (floating action buttons) is under of surface view. How can i do they visible? </p>
+
+<p>Some screenshot:</p>
+
+<p><img src=""https://i.stack.imgur.com/2jKW7.jpg"" alt=""fab-s""></p>
+"
+"56273468","0","","","2","2019-05-23 10:41:49","","11544093","<p>There is a solution that doesn't require any renders and works on both Android and iOS.</p>
+
+<p>Wrap the <code>TabbedPage</code> in a <code>NavigationPage</code> so the structure of your app becomes</p>
+
+<ul>
+<li>NavigationPage (root)
+
+<ul>
+<li>TappedPage
+
+<ul>
+<li>NavigationPage 
+
+<ul>
+<li>ContentPage (with tabbar)</li>
+</ul></li>
+</ul></li>
+<li>ContentPage (without tabbar)</li>
+</ul></li>
+</ul>
+
+<p>On the TabbedPage you have to hide the navigationbar of the 'root' NavigationPage, otherwise you have 2 navbars.</p>
+
+<pre><code>&lt;TabbedPage
+    ...
+    HasNavigationBar=""False""&gt; 
+</code></pre>
+
+<p>If you push a page using the 'root' <code>NavigationPage</code>, the tabbar is hidden and there is no blank space at the bottom.</p>
+
+<p>--- <strong>Edit</strong> ---</p>
+
+<p>See my example at:
+<a href=""https://github.com/Jfcobuss/HideTabbarExample/tree/master/HideTabbarExample"" rel=""nofollow noreferrer"">https://github.com/Jfcobuss/HideTabbarExample/tree/master/HideTabbarExample</a></p>
+
+<p>Downside of this solution is </p>
+
+<ul>
+<li><p>It is bit of an hacky workaround </p></li>
+<li><p>The title next to back-button is the title of the TabbedPage, not the current tab </p></li>
+<li><p>The animation to the next page is not as fluent as default</p></li>
+</ul>
+"
+"56273469","3","","","1","2019-05-23 10:41:53","","5620022","<p>I wouldn't recommend using the string ""where"" in your filter clause. Don't try to emulate SQL. What are you trying to filter using the where clause. If it's an email address then the query in your schema should contain user as the field and email as a parameter to that field.
+So the first example that you sent is the right way to do it.
+Also, avoid declaring queries using verbs like getUsers or getUser. The schema should just declare the query using nouns</p>
+
+<pre><code>Query
+{
+   Users(email:String):[User!]
+}
+
+type User 
+{
+    id
+    email
+    createdAt
+    otherStuff
+}
+</code></pre>
+"
+"56273471","0","","0","4","2019-05-23 10:41:57","","7967704","<p>I have an application that randomly throws exceptions.
+It is proberly a concurrency problem, but i don't quite know where to start the journey.</p>
+
+<p>I cannot make it happen in test enviroment, and I would like some help on extending my exception logging so i can find the excact lines that causes the problem and start finding the cause.</p>
+
+<p>I appriciate any and all proposals</p>
+
+<p>I get this exception and stacktrace</p>
+
+<pre><code>ex.message = Object is currently in use elsewhere.
+Exception caught at: WndProcException() ==&gt; OnThreadException() ==&gt; Application_ThreadException(sender, ete)
+ex. stackTrace:    at System.Drawing.Graphics.GetHdc()
+at System.Drawing.BufferedGraphics.RenderInternal(HandleRef refTargetDC, BufferedGraphics buffer)
+at System.Drawing.BufferedGraphics.Render()
+at System.Windows.Forms.Control.WmPaint(Message&amp; m)
+at System.Windows.Forms.Control.WndProc(Message&amp; m)
+at System.Windows.Forms.ButtonBase.WndProc(Message&amp; m)
+at System.Windows.Forms.Button.WndProc(Message&amp; m)
+at System.Windows.Forms.Control.ControlNativeWindow.OnMessage(Message&amp; m)
+at System.Windows.Forms.Control.ControlNativeWindow.WndProc(Message&amp; m)
+at System.Windows.Forms.NativeWindow.Callback(IntPtr hWnd, Int32 msg, IntPtr wparam, IntPtr lparam)
+</code></pre>
+
+<p>It seems to be a button control that is being used/removed while accessed, so i  have been looking at all my button usages</p>
+
+<p>Paint functions used to paint on buttons
+readonly static Font LagerFont_B = new Font(""Verdana"", 8F, FontStyle.Bold);</p>
+
+<pre><code>    public static void B_Paint(object sender, PaintEventArgs e)
+    {
+        try
+        {
+            Button b = sender as Button;
+            int p = (int)b.Tag;
+            Paint_Red_corner(e, p);
+
+            if (!DataStore.System.Lager_Status_Enable || b.Tag == null)
+            {
+                ((Button)sender).Enabled = true;
+                return;
+            }
+
+
+
+            if (!DataStore.DATA__Produkter_dic.ContainsKey(p) || !DataStore.DATA__Produkter_dic[p].p.Lager.Lagerstyring_Aktiv)
+            {
+                ((Button)sender).Enabled = true;
+                return;
+            }
+
+
+
+            decimal l = DataStore.DATA__Produkter_dic[p].p.Lager.Antal_på_Lager;
+            if (l == decimal.MinValue)
+            {
+                ((Button)sender).Enabled = true;
+                return;
+            }
+
+            if (l &lt; 1)
+            {
+                const int border = 20;
+                ((Button)sender).Enabled = false;
+                e.Graphics.DrawLine(new Pen(Color.Black, 3), border, border, b.Width - border, b.Height - border);
+                e.Graphics.DrawLine(new Pen(Color.Black, 3), b.Width - border, border, border, b.Height - border);
+            }
+            else
+            {
+                ((Button)sender).Enabled = true;
+                e.Graphics.DrawString(l.ToString(""F0""), LagerFont_B, Brushes.Black, new PointF(5, 5));
+            }
+        }
+        catch (Exception)
+        {
+        }
+    }
+
+    public static void Paint_Red_corner(PaintEventArgs e, int p)
+    {
+        try
+        {
+            if (!DataStore.Is_Segment(segment.SUNSET) &amp;&amp; DataStore.Kort.Kampagner.Kampagner_eksisterer)
+            {
+                if (DataStore.Kort.Kampagner.Findes_Produkt_til_Udlevering(p))
+                {
+                    Point[] points0 = { new Point(0, 0), new Point(0, 25), new Point(25, 0) };
+                    Point[] points1 = { new Point(2, 2), new Point(2, 20), new Point(20, 2) };
+                    e.Graphics.FillPolygon(Brushes.Black, points0);
+                    e.Graphics.FillPolygon(Brushes.Red, points1);
+                }
+            }
+        }
+        catch (Exception)
+        {
+        }
+    }
+</code></pre>
+"
+"56273472","0","","1","2","2019-05-23 10:41:58","","1868793","<p>I have been playing with Pandas for a while, so I am not sure this is actually feasible straight away, let me expose my problem:</p>
+
+<p>I have an array such as:</p>
+
+<pre><code>0    |1|2|3|
+1    |6|4|3|
+2      |6|1|
+dtype: object
+</code></pre>
+
+<p>Then I have a Data Frame I generated to do one hot encoding of such array:</p>
+
+<pre><code>    [[False False False False False]
+ [False False  False  False  False]
+ [ False  False  False  False False]]
+</code></pre>
+
+<p>Each row corresponds to the array row and columns are the different values from each array element, separated by | .</p>
+
+<p>At this point I want to assign a True/False value to each cell depending of its index and column.
+The value of the cell(R,C) will be true if the column C is contained in the array element A[R]</p>
+
+<p>e.g.
+cell(0,1) = True</p>
+
+<p>Wanted to do this ina. vectorized approach, not sure I can do that just creating an initially empty dataframe, I may need to encode the index and column in the cell value?</p>
+
+<p>I was using get dummies, but taking a look to the internals I see an iteration over the tags, just wondering if that was replaceable (I also had to customise it a little as the type was applied later on, causing a huge memory output temporarily)</p>
+
+<p>Get Dummies</p>
+
+<pre><code>def str_get_boolean_dummies(arr, sep='|'):
+arr = arr.fillna('')
+try:
+    arr = sep + arr + sep
+except TypeError:
+    arr = sep + arr.astype(str) + sep
+
+tags = set()
+for ts in arr.str.split(sep):
+    tags.update(ts)
+tags = sorted(tags - set([""""]))
+
+dummies = pd.np.empty((len(arr), len(tags)), dtype=pd.np.bool)
+
+for i, t in enumerate(tags):
+    pat = sep + t + sep
+    dummies[:, i] = map_infer(arr.values, lambda x: pat in x)
+</code></pre>
+"
+"56273473","0","","","1","2019-05-23 10:42:02","","9956305","<p>Yes, they can run simultaneously both threads. If you create 2 objects of the class as each object contains only one lock and every synchronized method requires lock.
+So if you want to run simultaneously, create two objects and then try to run by using of those object reference.</p>
+"
+"56273475","0","","","4","2019-05-23 10:42:13","","1205871","<p>At the command line just do:</p>
+
+<pre><code>ng generate service utils
+</code></pre>
+
+<p>then if it says in the generated code <code>@Injectable({providedIn: 'root'})</code> then it means you don't need to add the service to a providers array just start using it by injecting it into the constructor of your component as usual (recent Angular versions have providedIn root - if you don't have this then you will need to add your service to a providers array in the module in question).</p>
+
+<p>Then in your component's ts file you can expose the entire service to the template by making the service public:</p>
+
+<pre><code>constructor(public utilsService: UtilsService) {}
+</code></pre>
+
+<p>then you can access the utils method in your HTML template as follows:</p>
+
+<pre><code>{{ utilsService.util1(arg) }}
+</code></pre>
+
+<p>or if you only want to expose individual methods:</p>
+
+<pre><code>public util1
+
+constructor(private utilsService: UtilsService) {
+  this.util1 = utilsService.util1
+}
+</code></pre>
+
+<p>then you can access the utils method in your HTML template as follows:</p>
+
+<pre><code>{{ util1(arg) }}
+</code></pre>
+
+<p>It is also advisable to use TypeScript getters and setters (which you might want to memoize) but that's going beyond your question.</p>
+
+<p>Also worth mentioning, if Utils does not use any other Angular services (and never will) you can just import the TypeScript class into your .ts file and avoid using a service altogether - I tend to do this for simple string utils methods and the like. Yeshua reigns :)</p>
+"
+"56273476","0","","0","4","2019-05-23 10:42:14","","5841297","<p>I have an image for which I need to do Handwriting Recognition on Android Client using TFLite.</p>
+
+<p>To test this, I cut some portions of the image and passed them to the model but was getting very poor accuracy despite the model being 90% accurate.</p>
+
+<p>For further debugging, I was checking if my cutting part was correct. The following code is the one which I use to crop my image.</p>
+
+<pre><code>Bitmap test = Bitmap.createBitmap(src, 494,213,30, 33);
+</code></pre>
+
+<p>When I do this,</p>
+
+<pre><code>new Thread() {
+        @Override
+        public void run() {
+            try (FileOutputStream out = new FileOutputStream(path+""/test.jpg"")) {
+                (test).compress(Bitmap.CompressFormat.JPEG, 100, out); // bmp is your Bitmap instance
+                // PNG is a lossless format, the compression factor (100) is ignored
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }.start();
+</code></pre>
+
+<p>The image gets properly saved to my storage.</p>
+
+<p><a href=""https://i.stack.imgur.com/fpftt.jpg"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/fpftt.jpg"" alt=""enter image description here""></a></p>
+
+<p>But, I tried something like this.</p>
+
+<pre><code>for(int i =0;i&lt;30;i++){
+     for(int j=0;j&lt;33;j++){
+        System.out.print(Color.red(test.getPixel(i,j))+"" "");
+     }
+     System.out.println();
+}
+</code></pre>
+
+<p>I used the matrix and formed the following image.
+<a href=""https://i.stack.imgur.com/KXhWy.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/KXhWy.png"" alt=""enter image description here""></a></p>
+
+<p>As you can see, my original bitmap of <strong>1</strong> part is rotated. </p>
+
+<p>Can someone please explain why this is happening ?? And some alternative approach to this will help as well</p>
+
+<p>Thanks in Advance.</p>
+
+<p><strong>Update:</strong>
+ I tried the following</p>
+
+<pre><code>ExifInterface ei= null;
+try {
+   ei = new ExifInterface(root+""/test.jpg"");
+} catch (IOException e) {
+   e.printStackTrace();
+}
+int orientation = ei.getAttributeInt(ExifInterface.TAG_ORIENTATION,
+                    ExifInterface.ORIENTATION_UNDEFINED);
+System.out.println(""Orientation is ""+orientation);
+</code></pre>
+
+<p>My Output is:</p>
+
+<blockquote>
+  <p>Orientation is 0</p>
+</blockquote>
+"
+"56273477","4","","","0","2019-05-23 10:42:16","","1197506","<p>I did what Nestor said in his answer, but it didn't quite work for me. So this is what I did to make it work.
+Inside my service provider in method <code>register</code> I first tried this:</p>
+
+<pre><code>$this-&gt;app-&gt;bind('url', MyCustomProvider::class);
+</code></pre>
+
+<p>This did register my URL provider instead of the default one. The problem was that <strong>now my provider didn't have any access to routes</strong>. I checked the Laravel code for <code>\Illuminate\Routing\RoutingServiceProvider</code> because it has a method <code>registerUrlGenerator</code> for registering the URL provider. This method did a direct instantiation of the Laravel URL generator <code>Illuminate\Routing\UrlGenerator</code> and giving proper parameters in the constructor.</p>
+
+<p>So, I did the same in my service provider. Instead of doing <code>$this-&gt;app-&gt;bind</code> I did <code>$this-&gt;app-&gt;singleton('url', function ($app) { ... })</code> and provided basically the same code in the closure function as in <code>RoutingServiceProvider::registerUrlGenerator</code> but created the instance of my URL generator. This then worked properly, and my generator is now called every time. The final code was this:</p>
+
+<pre><code>// the code is copied from the \Illuminate\Routing\RoutingServiceProvider::registerUrlGenerator() method
+$this-&gt;app-&gt;singleton('url', function ($app) {
+    /** @var \Illuminate\Foundation\Application $app */
+    $routes = $app['router']-&gt;getRoutes();
+
+    $app-&gt;instance('routes', $routes);
+
+    // *** THIS IS THE MAIN DIFFERENCE ***
+    $url = new \My\Specific\UrlGenerator(
+        $routes,
+        $app-&gt;rebinding(
+            'request',
+            static function ($app, $request) {
+                $app['url']-&gt;setRequest($request);
+            }
+        ),
+        $app['config']['app.asset_url']
+    );
+
+    $url-&gt;setSessionResolver(function () {
+        return $this-&gt;app['session'] ?? null;
+    });
+
+    $url-&gt;setKeyResolver(function () {
+        return $this-&gt;app-&gt;make('config')-&gt;get('app.key');
+    });
+
+    $app-&gt;rebinding('routes', static function ($app, $routes) {
+        $app['url']-&gt;setRoutes($routes);
+    });
+
+    return $url;
+});
+</code></pre>
+
+<p>I hate copying the code, so it seems to me that the problem is in the base implementation. It should take the correct contract for URL generator instead of making direct instantiation of a base class. </p>
+"
+"56273478","0","","2","3","2019-05-23 10:42:25","","10483704","<p>I want to upload the recorded audio file to the Node js server using multer But I am not getting the file on the server. Here is my code .What should I do ?</p>
+
+<p>JS CLIENT SIDE CODE :</p>
+
+<pre><code>mediaRecorder.onstop=(e)=&gt;{
+          let blob=new Blob(chunks,{'type':'audio/mp3;'});
+          chunks=[];
+          let audioURL=window.URL.createObjectURL(blob);
+          audio.src=audioURL;
+          var data = new FormData();
+          var request = new XMLHttpRequest();
+          data.append('file',blob,'audio.mp3');
+          request.open('post','/upload'); 
+          request.send(data);
+          console.log('File sent');
+        }
+</code></pre>
+
+<p>SERVER SIDE CODE :</p>
+
+<pre><code>app.post('/upload', upload.single('file'), function (req, res, next) {
+
+          console.log(req.file); 
+          var oldpath = req.file;
+          var newpath = __dirname;
+          fs.readFile(oldpath, function (err, data) {
+          fs.writeFile(newpath, data, function (err) {
+                if (err) throw err;
+                res.end();
+            });
+
+  })
+})
+</code></pre>
+
+<p>And I am getting this error now :
+<a href=""https://i.stack.imgur.com/v0vg6.png"" rel=""nofollow noreferrer"">See the output Here and Error</a></p>
+"
+"56273479","0","","","1","2019-05-23 10:42:30","","8205133","<p>It could be because you have not selected the physicsWorld delegate:</p>
+
+<ul>
+<li><p>Be sure your class implements <code>SKPhysicsContactDelegate</code>:</p>
+
+<pre><code>class GameScene: SKScene, SKPhysicsContactDelegate {
+
+......
+
+}
+//Or whatever your class looks like
+</code></pre></li>
+<li><p>In your <code>didMove</code>:</p>
+
+<pre><code>override func didMove(to view: SKView) {
+
+    self.scene?.physicsWorld.contactDelegate = self
+  ....
+
+}
+</code></pre></li>
+</ul>
+"
+"56273481","0","","","0","2019-05-23 10:42:42","","8037399","<p>Since $horaSaida can be NULL the output will be something like this:</p>
+
+<pre><code>INSERT INTO ponto (hora_entrada,saida_almoco,entrada_tarde,hora_saida,cod_colab) VALUES ('',...)
+</code></pre>
+
+<p>and '' isn't a right datatime value</p>
+
+<p>You could this to get the right SQL:</p>
+
+<pre><code>$sql= ""INSERT INTO ponto (hora_entrada,saida_almoco,entrada_tarde,hora_saida,cod_colab) VALUES ("". (null === $horaEntrada ? ""NULL"" : ""'$horaEntrada'"") . "", '"".$saidaAlmoco.""', '"".$entradaTarde.""', '"".$horaSaida.""', '"".$cod_colab.""')"";
+</code></pre>
+"
+"56273482","0","","","9","2019-05-23 10:42:46","","2029983","<p>I would personally build a tally table to do this. Once you build that, you can easly get every date and count the number of days in each year:</p>
+
+<pre><code>DECLARE @YMD date = '20130101',
+        @Lapsed int = 1000;
+
+--Build a Tally table
+WITH N AS(
+    SELECT N
+    FROM (VALUES(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL)) N(N)),
+Tally AS(
+    SELECT ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) -1 AS I
+    FROM N N1, N N2, N N3, N N4), --10,000 should be enough
+--Build the dates table
+Dates AS(
+    SELECT DATEADD(DAY, T.I, @YMD) AS CalendarDate
+    FROM Tally T
+    WHERE T.I &lt;= @Lapsed - 1)
+--And count the days
+SELECT DATEPART(YEAR, CalendarDate) AS Year,
+       COUNT(CalendarDate) AS Days
+FROM Dates D
+GROUP BY DATEPART(YEAR, CalendarDate);
+</code></pre>
+
+<p>As a function:</p>
+
+<pre><code>CREATE FUNCTION CountDays (@YMD date, @Lapsed int)
+RETURNS table 
+AS RETURN
+
+    --Build a Tally table
+    WITH N AS(
+        SELECT N
+        FROM (VALUES(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL),(NULL)) N(N)),
+    Tally AS(
+        SELECT ROW_NUMBER() OVER (ORDER BY (SELECT NULL)) -1 AS I
+        FROM N N1, N N2, N N3, N N4), --10,000 should be enough
+    --Build the dates table
+    Dates AS(
+        SELECT DATEADD(DAY, T.I, @YMD) AS CalendarDate
+        FROM Tally T
+        WHERE T.I &lt;= @Lapsed - 1)
+    --And count the days
+    SELECT DATEPART(YEAR, CalendarDate) AS Year,
+           COUNT(CalendarDate) AS Days
+    FROM Dates D
+    GROUP BY DATEPART(YEAR, CalendarDate);
+
+GO
+
+SELECT *
+FROM (VALUES('20130101',1000),
+            ('20150501',755))V(YMD, Lapsed)
+     CROSS APPLY dbo.CountDays(V.YMD,V.Lapsed) CD;
+</code></pre>
+"
+"56273483","1","","0","5","2019-05-23 10:42:49","","10490231","<p>I am using password_verify to verify the hash but it is not doing what is expected, please help me with my code</p>
+
+<p>I've tried searching for answers but can't find one</p>
+
+<pre><code>//Putting the hashed passwords to the data base
+
+
+ session_start();
+    require('connect.php');
+    $hashedPwd = password_hash($dbcon, PASSWORD_DEFAULT);
+    $con = mysqli_connect(""****"", ""***"", ""***"", ""***""); 
+
+    $dbcon = $_POST['dbcon'];
+    mysqli_query($con,""INSERT INTO `epiz_22821280_codes`.`auth_code` 
+    (`passcode`) VALUES ('$hashedPwd');"");
+
+//Password test if I inserted 123456 on dbcon POST field
+
+
+
+session_start();
+    require('connect.php');
+
+    $input = ""123456"";
+    $hashedPwdInDb = password_hash(""$input"", PASSWORD_DEFAULT);
+    $query = ""SELECT * FROM `auth_code` WHERE passcode='$input' "";
+    $result = mysql_query($query);
+
+    $hash = ""$query"";
+    if(password_verify($input, $hash )){
+    print('success');
+
+    } else  {
+    print('not success');
+
+    }
+</code></pre>
+
+<p>I'm not getting the same reseult as he hashed passwords</p>
+"
+"56273486","2","","","5","2019-05-23 10:43:03","","11532266","<p>You might get some improvements if add this parameter</p>
+
+<pre><code>model =  IsolationForest(contamination=outliers_fraction, n_jobs=-1)
+</code></pre>
+
+<p>Also, we could try this. </p>
+
+<pre><code># Do not create instance every time
+scaler = StandardScaler()
+
+def find_anomaly(trx1,outliers_fraction):    
+    np_scaled = scaler.fit_transform(trx1)
+    data = pd.DataFrame(np_scaled)
+    # train isolation forest
+    model =  IsolationForest(contamination=outliers_fraction, n_jobs=-1)
+    model.fit(data) 
+    trx1['anomaly'] = pd.Series(model.predict(data))
+    return(trx1)
+
+# not loop but apply
+list_terminal_trx = trx.apply(lambda x: find_anomaly(x,outliers_fraction), axis =1).values
+</code></pre>
+"
+"56273488","4","","","0","2019-05-23 10:43:20","","7617130","<p>CommonController in example is just base class that triggers subject in onDestroy hook to unsubsribe from observable.</p>
+
+<pre><code>@Directive({
+  selector: '[appTrimOnBlur]'
+})
+export class TrimOnBlurDirective extends CommonController implements OnInit {
+
+  constructor(private elementRef: ElementRef,
+              @Self() private ngControl: NgControl) {
+    super();
+  }
+
+  ngOnInit(): void {
+    fromEvent(this.elementRef.nativeElement, 'blur').pipe(
+      takeUntil(this.unsubscribeOnDestroy)
+    ).subscribe(() =&gt; {
+      const currentValue: string = this.ngControl.value.toString();
+      const whitespace: string = ' ';
+      if (currentValue.startsWith(whitespace) || currentValue.endsWith(whitespace)) {
+        this.ngControl.control.patchValue(currentValue.trim());
+      }
+    });
+  }
+
+}
+</code></pre>
+
+<p>You can create generic trim directive, that will make trim not only for blur event,but for any, that you will provide:</p>
+
+<pre><code>@Input() public trimEventName: string = 'blur';
+
+  constructor(private elementRef: ElementRef,
+              @Self() private ngControl: NgControl) {
+    super();
+  }
+
+  ngOnInit(): void {
+    fromEvent(this.elementRef.nativeElement, this.trimEventName).pipe(
+      takeUntil(this.unsubscribeOnDestroy)
+    ).subscribe(() =&gt; {
+      const currentValue: string = this.ngControl.value.toString();
+      const whitespace: string = ' ';
+      if (currentValue.startsWith(whitespace) || currentValue.endsWith(whitespace)) {
+        this.ngControl.control.patchValue(currentValue.trim());
+      }
+    });
+  }
+</code></pre>
+"
+"56273489","1","56274776","1","2","2019-05-23 10:43:24","","9290563","<p>I want to make a starting screen linking to my menu. Using <code>Shader Graph</code> (unlit Shader) I created a little animation, where the background (an image with the material + Shader) pulsates. </p>
+
+<p>I searched for different solutions, but so far nothing helped. I tried changing the Near/Far values at the main camera. Every label is visible.</p>
+
+<p>Hierarchy</p>
+
+<p><img src=""https://cdn.discordapp.com/attachments/393478848144080908/581068910057619456/unknown.png"" alt=""Hierarchy""></p>
+
+<p>Scene View</p>
+
+<p><img src=""https://cdn.discordapp.com/attachments/393478848144080908/581068732378644500/unknown.png"" alt=""Scene View""></p>
+
+<p>Game View</p>
+
+<p><img src=""https://cdn.discordapp.com/attachments/393478848144080908/581068828855762944/unknown.png"" alt=""Game View""></p>
+
+<p>My Smartphone (Samsung Galaxy S3 neo, running Android 4.4.2)
+//EDIT: I forgot to mention that the screen was kinda buggy while capturing the screenshot, but I couldn't capture this.</p>
+
+<p><img src=""https://cdn.discordapp.com/attachments/393478848144080908/581066535339032602/Screenshot_2019-05-23-12-18-14.png"" alt=""My Smartphone (Samsung Galaxy S3 neo, running Android 4.4.2)""></p>
+
+<p>the shader in shadergraph</p>
+
+<p><img src=""https://cdn.discordapp.com/attachments/393478848144080908/581068568133894145/unknown.png"" alt=""the shader in shadergraph""></p>
+
+<p>I hope this helps. I really don't know what to do since it seems like a graphic issue of some kind.</p>
+
+<p>Thanks in advance.</p>
+
+<p>//UPDATE: I checked (using the Developer Mode on Android) if the screen is updating at the expected rate (presumably almost every frame) and yes, it is. I couldn't see a difference, but something is working.</p>
+
+<p>//UPDATE2: Using the Frame Debugger I found out, that it casts shadows. Since my new question (How to disable shadows in an unlit shader?) differs from my original one, I will close it.</p>
+"
+"56273490","0","56273646","1","0","2019-05-23 10:43:29","","10995968","<p>I'm inserting data into the database in .net core with if core I'm able to get the data from the get API, but while I'm inserting the data into the database getting error. And its a compilation error at Context.</p>
+
+<p>Error
+InvalidOperationException: No database provider has been configured for this DbContext. A provider can be configured by overriding the DbContext. On Configuring method or by using AddDbContext on the application service provider. If AddDbContext is used, then also ensure that your DbContext type accepts a DbContextOptions object in its constructor and passes it to the base constructor for DbContext.</p>
+
+<p>Context class</p>
+
+<pre><code> public class Context : DbContext
+    {
+        public Context(DbContextOptions&lt;Context&gt; options) : base(options)
+        {
+
+        }
+        public DbSet&lt;Mplus&gt; MpData { get; set; }
+
+    }
+</code></pre>
+
+<p>APIController</p>
+
+<pre><code>namespace MplusApi.Controllers
+{
+    [Route(""api/[controller]"")]
+    [ApiController]
+    public class MPlusController : ControllerBase
+    {
+
+        private Context _context;
+
+        public MPlusController(Context context) {
+            _context = context;
+        }
+
+        [HttpGet(""{Ftemp}"")]
+        public IActionResult Get(int Ftemp) {
+
+            using (var context = new Context())//Getting compilation error here
+            {
+                var mp = new Mplus()
+                {
+                    Ftemp = Ftemp,
+
+                };
+                context.MpData.Add(mp);
+                context.SaveChanges();
+            }
+            return Ok();
+        }
+
+    }
+</code></pre>
+
+<p>Model</p>
+
+<pre><code> public class Mplus
+    {
+
+        public int Ftemp { get; set; }
+    }
+</code></pre>
+
+<p>startup.cs</p>
+
+<pre><code> public class Startup
+    {
+
+        public Startup(IConfiguration configuration)
+        {
+            Configuration = configuration;
+        }
+
+
+        public IConfiguration Configuration { get; }
+
+        // This method gets called by the runtime. Use this method to add services to the container.
+        public void ConfigureServices(IServiceCollection services)
+        {
+            services.AddDbContext&lt;Context&gt;(options =&gt; options.UseSqlServer(Configuration.GetConnectionString(""DefaultConnection"")));
+
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+        }
+
+        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        {
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
+            app.UseMvc();
+        }
+    }
+</code></pre>
+"
+"56273491","0","56274932","2","0","2019-05-23 10:43:30","","4544426","<p>I was wondering if its possible to decide pixels between two bars? I got 2 series that represents some numbers, and they are standing side by side, 2 and 2 bars next to each other. I just want to control the space between the bars that stands next to each other. For example 10 px.</p>
+
+<p>I've tried different settings from highcharts but havent found anything that seems to work.</p>
+"
+"56273494","46","","","0","2019-05-23 10:43:39","","2079303","<p>An identifier that uses the scope resolution operator is a qualified name as per [expr.prim.id.qual]. Otherwise it is unqualified.</p>
+
+<p>The standard doesn't define the meaning of <em>fully qualified</em>, but it <em>does</em> mention it in [library]/[requirements]/[organization]/[contents] which says (quote from standard draft)</p>
+
+<blockquote>
+  <p>Whenever a name x defined in the standard library is mentioned, the name x is assumed to be fully qualified as ::std::x, unless explicitly described otherwise.
+  For example, if the Effects: element for library function F is described as calling library function G, the function ::std::G is meant.</p>
+</blockquote>
+
+<p>Wikipedia defines <a href=""https://en.wikipedia.org/wiki/Fully_qualified_name"" rel=""noreferrer"">Fully qualified name</a>:</p>
+
+<blockquote>
+  <p>In computer programming, a fully qualified name is an unambiguous name that specifies which object, function, or variable a call refers to without regard to the context of the call</p>
+</blockquote>
+
+<p>Only a name qualified starting from the global namespace is unambiguous without context. This is the common usage.</p>
+"
+"56273496","8","","","1","2019-05-23 10:43:45","","4160149","<p>The non-standard chained pseudo-classes <code>:-webkit-autofill:focus</code> can be used to style focused input elements being autofilled in Chrome.</p>
+
+<p>It appears however that Chrome is ignoring some properties affected to <code>:-webkit-autofill:focus</code>, such as <code>color</code> and <code>font-family</code>. The color of the text can be changed through the (non-standard) property <code>-webkit-text-fill-color</code>, but there is no other property that can be used to change the font of the text.</p>
+
+<p>A solution could have been to use JavaScript to copy the hovered suggestion, append it to a new element, place that element on top of the input and style it as you want. This is not possible though, as the suggestions are not injected as input value, and the content of the select input added by Chrome is not accessible either (probably both for security reasons).</p>
+
+<p>You can however mitigate the issue by either:</p>
+
+<ul>
+<li>preventing Chrome from autocompleting by setting <code>autocomplete=""off""</code> on the input element;</li>
+<li>setting height and width to the input to prevent it from changing size as the user hovers suggestions.</li>
+</ul>
+
+<p>Hope that helps.</p>
+"
+"56273497","1","","","0","2019-05-23 10:43:46","","11523400","<p>The function <code>tf.set_random_seed()</code> ensures reproducibility.
+Every time you execute the program, it generates the same sequence.</p>
+
+<p><strong>Example</strong></p>
+
+<pre><code># Run1
+[[0.96046877]]
+[[0.8362156]]
+[[0.510509]]
+[[0.7130234]]
+
+# Run2
+[[0.96046877]]
+[[0.8362156]]
+[[0.510509]]
+[[0.7130234]]
+</code></pre>
+
+<p>This makes sure your code is reproducible.
+<a href=""https://www.tensorflow.org/api_docs/python/tf/random/set_random_seed"" rel=""nofollow noreferrer"">Tensorflow Documentation</a></p>
+"
+"56273498","-1","","","0","2019-05-23 10:43:51","","3864405","<p>I know this is a really old topic, but just stumbled upon it.</p>
+
+<p>This article provides a really nice way of catching errors that occur inside the setters: <a href=""https://wpf.2000things.com/2017/06/18/1211-catching-exceptions-originating-in-property-accessors/"" rel=""nofollow noreferrer"">https://wpf.2000things.com/2017/06/18/1211-catching-exceptions-originating-in-property-accessors/</a></p>
+
+<p>How it works is extremely simple and effective: it creates an override of TraceListener and re-throws the exception inside the overriden WriteLine() method.
+Then, App.OnStartup() it adds the new Listener to PresentationTraceSources.DataBindingSource.Listeners and all of a sudden, the exception being thrown inside the setter can be caught.</p>
+
+<p>The drawback is that if you have any binding errors throughout your application, these will be caught immediately and you'll start seeing them.</p>
+"
+"56273499","2","","","0","2019-05-23 10:43:53","","1863229","<p>We can try matching all occurrences of the following pattern:</p>
+
+<pre><code>\b\w+day\b
+</code></pre>
+
+<p>Sample script:</p>
+
+<pre><code>strg &lt;- 'Consumer   bot  --At 08:00 PM, only on Monday, Tuesday, Wednesday, Thursday, and Friday'
+m &lt;- gregexpr(""\\b\\w+day\\b"", strg)
+regmatches(strg, m)[[1]]
+
+[1] ""Monday""    ""Tuesday""   ""Wednesday"" ""Thursday""  ""Friday""   
+</code></pre>
+
+<p>We could try to make the pattern more restrictive, to avoid unwanted matches such as <code>holiday</code>:</p>
+
+<pre><code>\b(?:Mon|Tues|Wed|Thurs|Fri|Sat|Sun)day\b
+</code></pre>
+
+<p>But for your sample data, the above pattern would generate the same result.</p>
+"
+"56273501","0","","","0","2019-05-23 10:43:57","","8444338","<p>You need to try installing angular with admin previledge and try to install it globally with -g </p>
+
+<p><code>npm install -g @angular/cli</code></p>
+
+<p>after installation check the angular version</p>
+
+<p><code>ng --version</code></p>
+"
+"56273502","0","","","0","2019-05-23 10:43:58","","6235222","<p>Try adding style margin-top:0 to body and h1 tags</p>
+"
+"56273503","0","","","0","2019-05-23 10:43:59","","1604337","<p>I think it is platform dependent. When developing in .Net MVC, I use bootstrap style lower case and hyphens for class names, but for ids I use PascalCase.</p>
+
+<p>The reasoning for this is that my views are backed by strongly typed view models. Properties of C# models are pascal case. For the sake of model binding with MVC it makes sense that the names of HTML elements that bind to the model are consistent with the view model properties which are pascal case. For simplicity my ids are use the same naming convention as element names except for radio buttons and check boxes which require unique ids for each element in the named input group.</p>
+"
+"56273505","1","","2","0","2019-05-23 10:44:02","","10516796","<p>[<img src=""https://i.stack.imgur.com/mBTW8.png"" alt=""1]""><a href=""https://i.stack.imgur.com/gPfJe.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/gPfJe.png"" alt=""Intent""></a>We have a Dialogflow bot consisting of two intents. Each intent contains some set of questions.
+The user answers the questions(prompts) and this process continues. We are getting the fulfillment text only after the intent is completed but we need to get the fulfillment text(Each and every prompt) after completing every question in that particular intent.</p>
+
+<p>Help us in finding the solution.</p>
+"
+"56273506","0","56274784","2","3","2019-05-23 10:44:05","","11431422","<p>In this application I'm uploading images to my local uploads folder and in <code>MySQL database</code> I'm storing the image's name. How can I display one image at the time from images array which are fetched from <code>database</code>? Currently I managed to display all uploaded images using <code>EJS</code>. How can i set it that the single displayed image ""src"" changes every 10 seconds or so?</p>
+
+<pre><code>&lt;% for(i=0; i&lt;images.length; i++) { %&gt;
+    &lt;img src=""/uploads/&lt;%= images[i].name %&gt;"" alt=""""&gt;
+&lt;% }; %&gt;
+</code></pre>
+"
+"56273507","1","56273896","2","7","2019-05-23 10:44:06","","11544248","<p>I am pretty new to coding and here is my requirement:</p>
+
+<ul>
+<li>I am getting a <strong>JSON</strong> response which has an array of values (refer read,update,delete in the below <strong>JSON</strong> response)</li>
+<li>The number of values is dynamic and tend to vary each time.</li>
+<li>I want to know how to retrieve them and put into an string array and return the values</li>
+</ul>
+
+<p>Eg.: end result should be like</p>
+
+<pre><code>string[] deleteValues = {""MCS:Menu:Admin"",""MCS:test""}
+</code></pre>
+
+<p>In case if there is answer already available to this question, please point me in the right direction.</p>
+
+<p>Thanks in advance</p>
+
+<p>==========================================</p>
+
+<p>I am able to get the values this way...</p>
+
+<pre><code>string value1 = new JavaScriptSerializer().Deserialize&lt;JSON_Deconstructor&gt;(resp).Permitted[0].Delete[0].ToString();
+
+string value2 = new JavaScriptSerializer().Deserialize&lt;JSON_Deconstructor&gt;(resp).Permitted[0].Delete[1].ToString();
+</code></pre>
+
+<p>but since the number of values in delete is dynamic, i need to how to pull them.</p>
+
+<p>====================</p>
+
+<p>the code snippet:</p>
+
+<pre><code>string resp = new StreamReader(request1.GetResponse().GetResponseStream()).ReadToEnd(); // resp is a JSON response from a server
+JSON_Deconstructor dc = new JSON_Deconstructor { };
+dc.Permitted = new Permitted[1];
+
+string value1 = new JavaScriptSerializer().Deserialize&lt;JSON_Deconstructor&gt;(resp).Permitted[0].Delete[0].ToString();
+
+string value2 = new JavaScriptSerializer().Deserialize&lt;JSON_Deconstructor&gt;(resp).Permitted[0].Delete[1].ToString();
+</code></pre>
+
+<p>==================</p>
+
+<p>JSON_Deconstructor class contents:</p>
+
+<pre><code>public class JSON_Deconstructor
+{
+    public Permitted[] Permitted { get; set; }
+    public Denied[] Denied { get; set; }
+}
+</code></pre>
+
+<p>==================</p>
+
+<p>Permitted class contents:</p>
+
+<pre><code>public class Permitted
+{
+    public string[] Read { get; set; }
+    public string[] Update { get; set; }
+    public string[] Delete { get; set; }
+}
+</code></pre>
+
+<p>=================</p>
+
+<p>JSON response:</p>
+
+<pre><code>{
+""Permitted"": [
+    {
+        ""read"": [
+            ""MCS:Menu:Admin""
+        ],
+        ""update"": [
+            ""MCS:test""
+        ],
+        ""delete"": [
+            ""MCS:Menu:Admin"",
+            ""MCS:test""
+        ]
+    }
+]
+}
+</code></pre>
+"
+"56273508","0","","","0","2019-05-23 10:44:08","","1144035","<p>One method is a recursive CTE:</p>
+
+<pre><code>with dates as (
+      select v.d, 1000 - datediff(day, v.d, dateadd(year, 1, v.d)) as days
+      from (values (datefromparts(2013, 1, 1))) v(d)
+      union all
+      select dateadd(year, 1, d), days - datediff(day, d, dateadd(year, 1, d)) 
+      from dates
+      where days &gt; 0
+     )
+select d,
+       (case when days &gt; 0 then datediff(day, d, dateadd(year, 1, d))
+             else datediff(day, d, dateadd(year, 1, d)) + days
+        end)
+from dates;
+</code></pre>
+
+<p><a href=""https://dbfiddle.uk/?rdbms=sqlserver_2017&amp;fiddle=5ba52e0662c10c0bb58e20a62e898ddd"" rel=""nofollow noreferrer"">Here</a> is a db&lt;>fiddle.</p>
+"
+"56273509","0","","","0","2019-05-23 10:44:14","","2295102","<p>I have changed below the line </p>
+
+<pre><code>contentPanel.addView(view);
+</code></pre>
+
+<p>to</p>
+
+<pre><code>contentPanel.addView(view,LinearLayout.LayoutParams.MATCH_PARENT,LinearLayout.LayoutParams.MATCH_PARENT);
+</code></pre>
+
+<p>It worked for me.</p>
+"
+"56273510","23","","","0","2019-05-23 10:44:15","","8922","<p>Indeed, it is not a standard term. It has no definition in the standard.</p>
+
+<p>However, the phrase ""fully qualified"" appears exactly once, in [contents] (15.5.1.1 ""Library contents"" in the as-of-writing most current draft N4800) paragraph 3:</p>
+
+<blockquote>
+  <p>Whenever a name <code>x</code> defined in the standard library is mentioned, the name <code>x</code> is assumed to be fully qualified as <code>::std::x</code>, unless explicitly described otherwise.</p>
+</blockquote>
+
+<p>So in this definition, only names starting with <code>::</code> are fully qualified.</p>
+"
+"56273511","0","56273573","2","1","2019-05-23 10:44:16","","11527863","<p>I wanna SELECT some date, but i have problem with this</p>
+<pre><code>SELECT DISTINCT `clients_agreements`.`date_start` , `buildings`.`id` ,
+    `buildings`.`street` , `buildings`.`street_nr` ,
+    `clients`.`building_id` , `clients_agreements`.`user_id`, `clients_agrees_conds`.`user_id`, `clients_agrees_perss`.`client_agreement_id`
+FROM `clients_agreements`
+LEFT JOIN `buildings`
+    On `clients_agreements`.`user_id` = `buildings`.`id`
+LEFT JOIN `clients`
+    ON `clients`.`building_id` = `buildings`.`id`
+LEFT JOIN `clients_agrees_conds`
+    ON `clients_agreements`.`user_id` = `clients_agrees_conds`.`user_id`
+LEFT JOIN `clients_agrees_perss`
+   ON `clients_agrees_conds`.`user_id` = `clients_agrees_perss`.`user_id`
+WHERE `date_start` = (CURRENT_DATE)
+</code></pre>
+<p>I get this:</p>
+<blockquote>
+<p>error #1052 - Column 'date_start' in where clause is ambiguous</p>
+</blockquote>
+"
+"56273512","2","","0","1","2019-05-23 10:44:19","","10801402","<p>I have a <code>LiteDB</code> database with <strong>2 POCO classes</strong><br> </p>
+
+<ul>
+<li>Author that includes ""<code>Id</code>"" and ""<code>Name</code>"", as Properties</li>
+<li>Book  that includes ""<code>Title</code>"" ""<code>Id</code>"" and ""<code>Author</code>""(this property has a
+<code>bson</code> reference to the Author's collection)</li>
+</ul>
+
+<p>I'm trying to query the book collection in order to retrieve all authors named ""<code>John</code>"" that wrote one or more books.</p>
+
+<pre><code> class Author // collection ""authors""
+ {
+     [BsonId]
+     public int id {get; set;}
+     public string Name{get; set;}
+ }
+ class Book //collection ""books""
+ {
+     [BsonId]
+     public int id {get; set;}
+     public string Title{get; set;}
+     [BsonRef(""authors"")] 
+     public Author author {get; set;}
+}
+</code></pre>
+
+<p>Thank you for the help</p>
+"
+"56273513","0","","1","7","2019-05-23 10:44:19","","11544354","<p>So I am facing a 403: Not authorized error while trying to use containers (kubernetes and container registry) anyone faced this issue or knows the answer for this problem?</p>
+
+<p>here is a screenshot for a better explanation:
+<a href=""https://i.stack.imgur.com/1UULG.jpg"" rel=""nofollow noreferrer"">https://ibb.co/McxWQRW</a></p>
+"
+"56273516","1","","1","0","2019-05-23 10:44:22","","3061047","<p>This is a follow on to my <a href=""https://stackoverflow.com/questions/56269811/connecting-to-informix-with-nodejs-in-macos-ibm-driver-issues"">original question</a></p>
+
+<p>I am trying to set up IBM's Informix driver for use with NodeJS on MacOS.</p>
+
+<p>After viewing the Readme file for the <a href=""https://www.npmjs.com/package/informix"" rel=""nofollow noreferrer"">Informix</a> NPM library, I am a little confused as to what the environment variables are and whether I need to apply them all?</p>
+
+<p><a href=""https://i.stack.imgur.com/2Zpci.png"" rel=""nofollow noreferrer""><img src=""https://i.stack.imgur.com/2Zpci.png"" alt=""enter image description here""></a></p>
+
+<p>I managed to track down the install location for the SDK files: <code>Applications/IBM/informix</code> and then added this to the <code>~/.bash_profile</code> file as so:</p>
+
+<pre><code>export INFORMIXDIR=/Applications/IBM/informix
+export PATH=$PATH:$INFORMIDIR
+</code></pre>
+
+<p>Should I change my <code>PATH</code> to include <code>/bin</code> at the end?</p>
+
+<p>I am also confused by the remainder of the statements in the Readme.
+I was expecting to set the server name and host dynamically rather than hard-coding them?</p>
+
+<p>Some guidance would be appreciated.</p>
+"
+"56273518","1","58274781","2","2","2019-05-23 10:44:23","","9799161","<p>I want to iterate through all txt files in a folder and add string to each line but the first one.</p>
+<p>I have now:</p>
+<blockquote>
+<p>a|b|c|d|e|f</p>
+<p>1|2|3|4|5</p>
+</blockquote>
+<p>I want to add e.g. 'X'</p>
+<blockquote>
+<p>a|b|c|d|e|f</p>
+<p>X|1|2|3|4|5</p>
+</blockquote>
+<pre><code>import os
+import glob
+from pathlib import Path
+
+cwd = os.getcwd()
+
+directory = cwd
+
+output = cwd
+
+txt_files = os.path.join(directory, '*.txt')
+
+for txt_file in glob.glob(txt_files):
+    cpath =(Path(txt_file).resolve().stem)
+  
+    nametxt = &quot;-&quot;.join(cpath.split('_')[0:1])
+    amendtext = &quot;|  &quot; + nametxt
+
+    src=open(txt_file, errors='ignore')
+
+    lines = src.read().splitlines()
+    src.close
+
+    src = open(txt_file, &quot;w&quot;)
+    src.write('\n'.join([amendtext +line for line in lines]))
+</code></pre>
+"
+"56273520","0","56273617","1","0","2019-05-23 10:44:26","","2147780","<p>I am trying to have a function that takes an index as parameter where the key is limited to a key of T </p>
+
+<pre><code>function aliasSet&lt;T&gt;(values: {[x:keyof T]:string})
+//compiler error: An index signature parameter type must be 'string' or 'number'
+</code></pre>
+
+<p>Is there anyway to achieve that? Is this the right approach?</p>
+"
+"20883662","8","","","6","2014-01-02 13:05:27","","192373","<p>Follows a minimal example that uses SurfaceTexture to display front facing camera without mirroring. Note that error checking is mostly dropped for brevity. Also, in this example I do not follow the recommendation to open camera in a background thread (on some devices this may freeze the UI for too long).</p>
+
+<pre><code>import java.io.IOException;
+
+import android.app.Activity;
+import android.graphics.Matrix;
+import android.graphics.SurfaceTexture;
+import android.hardware.Camera;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.Surface;
+import android.view.TextureView;
+import android.widget.FrameLayout;
+
+public class SurfaceTextureActivity extends Activity implements TextureView.SurfaceTextureListener{
+
+private Camera mCamera;
+private TextureView mTextureView;
+
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+
+    mTextureView = new TextureView(this);
+    mTextureView.setSurfaceTextureListener(this);
+
+    setContentView(mTextureView);
+}
+
+@Override
+public void onSurfaceTextureAvailable(SurfaceTexture surface, int width, int height) {
+
+    int cameraId = 0;
+    Camera.CameraInfo info = new Camera.CameraInfo();
+
+    for (cameraId = 0; cameraId &lt; Camera.getNumberOfCameras(); cameraId++) {
+        Camera.getCameraInfo(1, info);
+        if (info.facing == Camera.CameraInfo.CAMERA_FACING_FRONT)
+            break;
+    }
+
+    mCamera = Camera.open(cameraId);
+    Matrix transform = new Matrix();
+
+    Camera.Size previewSize = mCamera.getParameters().getPreviewSize();
+    int rotation = getWindowManager().getDefaultDisplay()
+            .getRotation();
+
+    Log.i(""onSurfaceTextureAvailable"", "" CameraOrientation("" + cameraId + "")"" + info.orientation + "" "" + previewSize.width + ""x"" + previewSize.height + "" Rotation="" + rotation);
+
+    switch (rotation) {
+    case Surface.ROTATION_0: 
+        mCamera.setDisplayOrientation(90);
+        mTextureView.setLayoutParams(new FrameLayout.LayoutParams(
+                previewSize.height, previewSize.width, Gravity.CENTER));
+        transform.setScale(-1, 1, previewSize.height/2, 0);
+        break;
+
+    case Surface.ROTATION_90:
+        mCamera.setDisplayOrientation(0);
+        mTextureView.setLayoutParams(new FrameLayout.LayoutParams(
+                previewSize.width, previewSize.height, Gravity.CENTER));
+        transform.setScale(-1, 1, previewSize.width/2, 0);
+        break;
+
+    case Surface.ROTATION_180:
+        mCamera.setDisplayOrientation(270);
+        mTextureView.setLayoutParams(new FrameLayout.LayoutParams(
+                previewSize.height, previewSize.width, Gravity.CENTER));
+        transform.setScale(-1, 1, previewSize.height/2, 0);
+        break;
+
+    case Surface.ROTATION_270:
+        mCamera.setDisplayOrientation(180);
+        mTextureView.setLayoutParams(new FrameLayout.LayoutParams(
+                previewSize.width, previewSize.height, Gravity.CENTER));
+        transform.setScale(-1, 1, previewSize.width/2, 0);
+        break;
+    }
+
+
+    try {
+        mCamera.setPreviewTexture(surface);
+    } catch (IOException t) {
+    }
+
+    mTextureView.setTransform(transform);
+    Log.i(""onSurfaceTextureAvailable"", ""Transform: "" + transform.toString());
+
+    mCamera.startPreview();
+
+}
+
+@Override
+public void onSurfaceTextureSizeChanged(SurfaceTexture surface, int width, int height) {
+    // Ignored, the Camera does all the work for us
+}
+
+@Override
+public boolean onSurfaceTextureDestroyed(SurfaceTexture surface) {
+    mCamera.stopPreview();
+    mCamera.release();
+    return true;
+}
+
+@Override
+public void onSurfaceTextureUpdated(SurfaceTexture surface) {
+    // Update your view here!
+}
+}
+</code></pre>
+"
+"20883663","2","","","5","2014-01-02 13:05:29","","1317221","<p>do you just want to make the zeros <code>NA</code>s?</p>
+
+<pre><code>mydata[ mydata == 0] &lt;-NA
+</code></pre>
+
+<p>or remove them from the analysis altogether</p>
+
+<pre><code>nozeromydata &lt;- mydata[ mydaya != 0 ]
+</code></pre>
+
+<p>if you don't like either of these suggestions, I say:</p>
+
+<pre><code>log( mydata + 1 )
+</code></pre>
+"
+"20883666","1","","1","2","2014-01-02 13:05:39","","289887","<p>After creating a Datetime picker control using JQWidgets, you can set value to that control in this manner:</p>
+
+<pre><code>$(""#jqxdatetimeinput"").jqxDateTimeInput(‘setDate’, new Date(2010, 1, 1));
+</code></pre>
+
+<p>It's fine but in my case, I use Asp.Net MVC with Razor and the data retrieved from my repository is available while rendering my view.</p>
+
+<p>I want to be able to set the date value to my Datetime picker at that moment; when rendering the view at server side.</p>
+
+<p><em>Note that with JQWidgets, for creating a Datetime picker, you must declare a div element with an id and then call a function to transform it in Datetime picker. This is the reason why I'm not able to set the date value from my model to an html element.</em></p>
+
+<p>I don't want to put a script block and accessing my model in this block to set the Datetime picker like that: </p>
+
+<pre><code>&lt;script&gt;
+  $(""#MyDivElementId"").jqxDateTimeInput('setDate', @Model.Today);
+&lt;/script&gt;
+</code></pre>
+
+<p>I also want a solution without Knockout.js; I Love Knockout.js but in my case, simple model binding solution is enough.</p>
+
+<p>Anyone have a better solution?</p>
+"
+"20883667","2","","","1","2014-01-02 13:05:41","","43959","<pre><code>$query = mysql_query(""SELECT * FROM employee_database WHERE Employee_Name= '$username'"");
+$result = mysql_query($query) or die(mysql_error());
+</code></pre>
+
+<p>In the first line, <a href=""http://php.net/mysql_query"" rel=""nofollow""><code>mysql_query()</code></a> returns a <a href=""http://php.net/manual/en/language.types.resource.php"" rel=""nofollow"">resource</a>.</p>
+
+<p>In the second line, you pass the return value back into another call to <a href=""http://php.net/mysql_query"" rel=""nofollow""><code>mysql_query()</code></a>. </p>
+
+<p><a href=""http://php.net/mysql_query"" rel=""nofollow""><code>mysql_query()</code></a> expects a SQL query string as parameter.</p>
+
+<p>Easy fix:</p>
+
+<pre><code>$query = ""SELECT * FROM employee_database WHERE Employee_Name= '$username'"";
+$result = mysql_query($query) or die(mysql_error());
+</code></pre>
+
+<p>Some further tips:</p>
+
+<ol>
+<li><a href=""https://encrypted.google.com/search?q=You+have+an+error+in+your+SQL+syntax%3B+check+the+manual+that+corresponds+to+your+MySQL+server+version+for+the+right+syntax+to+use+near+%27Resource+id+%234%27+at+line+1"" rel=""nofollow"">google error messages</a> before consulting on a forum</li>
+<li>read the documentation before consulting a forum</li>
+<li>don't use <a href=""http://php.net/manual/en/intro.mysql.php"" rel=""nofollow"">mysql extension in PHP, it is deprecated</a>!</li>
+<li>use prepared statements - your code is prone to <a href=""http://en.wikipedia.org/wiki/SQL_Injection"" rel=""nofollow"">SQL injection attacks</a></li>
+</ol>
+"
+"20883668","3","","","5","2014-01-02 13:05:43","","1598097","<p>If you were using a JAXB entity instead of a String you could use the <a href=""http://camel.apache.org/soap.html"" rel=""nofollow"">SOAP data format</a> to marshal it into a SOAP envelope. From that page...</p>
+
+<pre><code>&lt;route&gt;
+  &lt;from uri=""direct:start""/&gt;
+  &lt;marshal&gt;
+     &lt;soapjaxb contentPath=""com.example.customerservice"" version=""1.2"" elementNameStrategyRef=""myNameStrategy""/&gt;
+  &lt;/marshal&gt;
+  &lt;to uri=""jms:myQueue""/&gt;
+&lt;/route&gt;
+</code></pre>
+
+<p>Generally it is ill advised to hand write your XML as it's very error prone and you can't make use of these handy features. You'll also find it difficult to use any of the expression languages other than XPath against the plain string.</p>
+"
+"20883669","2","","","2","2014-01-02 13:05:47","","2060725","<p><code>Mocks</code> and <code>Dependency Injection</code> go hand in hand because without dependency injection, you would not be able to have your classes use the mocks instead of the real thing. What you don't need is a <code>Dependency Injection Container</code> (like Ninject for example). You can use it if you like, but if you did it right, you should be able to Unit-Test your classes by supplying all dependencies yourself.</p>
+"
+"20883670","0","","","0","2014-01-02 13:05:50","","540761","<p>First of all try changing = to == when comparing text with 'Closed'.</p>
+"
+"20883671","0","","3","0","2014-01-02 13:05:53","","3116309","<p>i am working in jsp webapplication in ubuntu. my tomcat6 is located =>/var/lib/tomcat6
+here one folder is there ""webapps"".i have put my web page in webapps/ROOT. and i run from browser like localhost:8080/xyz.jsp it works fine. but now i want to change directory from webapps. for that i have create new directory testing123 in var/lib/tomcat. and configure in /var/lib/tomcat6/conf/server.xml which is given below.</p>
+
+<pre><code>        &lt;Host name=""localhost""  appBase=""testing123""
+        unpackWARs=""true"" autoDeploy=""true""
+        xmlValidation=""false"" xmlNamespaceAware=""false""&gt;
+</code></pre>
+
+<p>and restart tomcat and cut from webapps and pest  my xyz.jsp file in testing123 and try to run localhost:8080/xyz.jsp i get error 404. so kindlly tell me how to change directory. </p>
+
+<p>thank you in advance.</p>
+"
+"20883672","0","20883734","2","0","2014-01-02 13:06:02","","1474921","<p>It seems that my onchange event works only with my select box when I manually make a selection in my selectbox, however, if I were to programmatically make a selection using a button, it does not appear that the onchange button triggers at all. How can the code below be modified such that functionality can be added to trigger the onchange event from both a manual selection and a the button?</p>
+
+<pre><code>&lt;!DOCTYPE html&gt;
+
+&lt;html&gt;
+
+&lt;head&gt;
+
+&lt;script type=""text/javascript""&gt;
+
+function record_select() {
+
+    var x = document.getElementById('comments').value
+    var y = document.getElementById('cars').value
+
+    if (y) {
+        if (x) {
+            document.getElementById('comments').value = document.getElementById('cars').value + ' was selected\n\n' + x
+        }
+        else {
+            document.getElementById('comments').value = document.getElementById('cars').value + ' was selected'
+        }
+    }
+}
+function change_select() {
+
+    document.getElementById('cars').value = 'audi'
+
+}
+&lt;/script&gt;
+
+&lt;/head&gt;
+
+&lt;body&gt;
+
+&lt;select id=""cars"" onchange=""record_select()""&gt;
+    &lt;option value=""""&gt;&lt;/option&gt;
+    &lt;option value=""volvo""&gt;Volvo&lt;/option&gt;
+    &lt;option value=""saab""&gt;Saab&lt;/option&gt;
+    &lt;option value=""mercedes""&gt;Mercedes&lt;/option&gt;
+    &lt;option value=""audi""&gt;Audi&lt;/option&gt;
+&lt;/select&gt; 
+&lt;br&gt;
+&lt;textarea id=""comments"" style=""width: 400px; height: 50px;""&gt;&lt;/textarea&gt;
+&lt;br&gt;
+&lt;input type=""button"" value=""change"" onclick=""change_select()""&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+"
+"20883673","4","","","0","2014-01-02 13:06:09","","270037","<p>try this</p>
+
+<pre><code>foreach($country as $c)
+{
+  echo $c[""president""].""&lt;br/&gt;"";
+}
+</code></pre>
+"
+"20883674","0","","","2","2014-01-02 13:06:14","","1030018","<p>Answer for : <code>moreover it is exported via EXPORT_SYMBOL</code></p>
+
+<p><code>EXPORT_SYMBOL()</code> makes <code>LogMessage()</code> is accessible to loadable kernel modules. </p>
+
+<p>For eample, <code>vmalloc()</code> is exported to use in kernel modules <a href=""http://lxr.free-electrons.com/source/mm/vmalloc.c#L1708"" rel=""nofollow noreferrer"">http://lxr.free-electrons.com/source/mm/vmalloc.c#L1708</a></p>
+
+<p>But still you have to include the <a href=""http://lxr.free-electrons.com/source/include/linux/vmalloc.h#L67"" rel=""nofollow noreferrer"">vmalloc.h</a> in loadable kernel module source.so do not confuse with extern and EXPORT_SYMBOL.   </p>
+
+<p><strong>Solution</strong></p>
+
+<p>In your Makefile, modify as below</p>
+
+<pre><code>obj-m += ModemAPI.c StateMachine.c
+</code></pre>
+
+<p>i.e ModemAPI.c which has LogMessage() should be compiled first.  </p>
+
+<p><strong>Change proposed to Makefile</strong></p>
+
+<pre><code>obj-m += Mymodule.o
+
+Mymodule-objs := ../Common/ModemAPI.o ../Common/StateMachine.o ../Common/ElementsPool.o 
+</code></pre>
+
+<p><strong>EDIT : 2</strong></p>
+
+<p>static in <code>static void LogMessage ( char *format, ...)</code> restricts the use of LogMessage() in other files. This concept is called <a href=""https://stackoverflow.com/questions/5319361/static-function-in-c"">static functions</a>.</p>
+"
+"20883675","1","","","0","2014-01-02 13:06:15","","725263","<pre><code>foreach($country as $countryName =&gt; $countryvalue){
+   echo $val[""president""];
+}
+</code></pre>
+"
+"20883676","0","","","10","2014-01-02 13:06:18","","1405008","<p>Make conn as static variable in MainActivity.</p>
+
+<pre><code>class MainActivity
+{
+static object conn;
+
+}
+</code></pre>
+
+<p>just accessing the object will return null. static object alone live throughout the life-cycle of application.</p>
+
+<p>Edit As requested:</p>
+
+<pre><code>private class MyNetworkTask extends AsyncTask&lt;Void, Void, Void&gt; {
+     protected Boolean doInBackground()  {
+
+        try {
+        st = xyz.createStatement();
+        rs = st.executeQuery(""SELECT name from lalit_db where category='.Net'"");
+
+        while(rs.next())
+        {
+            Log.w(""Here is the result.."", rs.getString(1));
+        }
+
+
+    } catch (SQLException e) {
+        // TODO Auto-generated catch block
+        e.printStackTrace();
+return false;
+    }
+return true;
+}
+
+     protected void onProgressUpdate(Integer... progress) {
+        
+     }
+
+     protected void onPostExecute(Long result) {
+          Log.w(“Process completed”);
+     }
+ }
+</code></pre>
+
+<p>new MyNetworkTask().execute();</p>
+"
+"20883677","1","20884140","1","0","2014-01-02 13:06:20","","2810515","<p>I want to implement the loading progressbar when I read the file.</p>
+
+<p>For example , some <code>fileManager APP</code> will show the progressbar to denote loading when it read the file from SD card.</p>
+
+<p>I know it can use <code>android:fromDegrees=""0"" android:toDegrees=""360""</code> to make the progressbar always turn.</p>
+
+<p>But in <code>Fragment</code>. How to show the progressbar(loading) when I want it appear. And close the <code>progressbar</code> when I want it disappear?</p>
+
+<p>The pseudo code like the following:</p>
+
+<pre><code>If( ReadingFile == true ) {
+
+//Show the progressbar
+
+}else if( ReadingFinish == true ){
+
+//Close the progressbar
+
+}
+</code></pre>
+
+<p>Should I write the <code>progressbar</code> to a <code>new Fragment</code>.
+If I want it to show , add the <code>fragment</code> ?</p>
+
+<p>or does there has other method to implement ?</p>
+"
+"20883678","1","20883877","1","0","2014-01-02 13:06:22","","1331615","<p>I juste changed 
+ - my signature type from Lookup3Signature to TextProfileSignature and
+ - the type of few fields from String to text_general
+and then, I restarted solr. 
+I would like to have old solr documents taking into consideration these changes. 
+Is there a way to that without having to re-index everything? 
+Thank you</p>
+"
+"20883679","3","","","2","2014-01-02 13:06:24","","421162","<p>As @stg mentioned use</p>
+
+<pre><code>import javax.faces.bean.ManagedBean;
+</code></pre>
+
+<p>and also you are mapping two url-pattern to FacesServlet.</p>
+
+<pre><code>&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;FacesServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;*.xhtml&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+&lt;servlet-mapping&gt;
+    &lt;servlet-name&gt;FacesServlet&lt;/servlet-name&gt;
+    &lt;url-pattern&gt;/faces/*&lt;/url-pattern&gt;
+&lt;/servlet-mapping&gt;
+
+&lt;servlet&gt;
+    &lt;servlet-name&gt;FacesServlet&lt;/servlet-name&gt;
+    &lt;servlet-class&gt;javax.faces.webapp.FacesServlet&lt;/servlet-class&gt;
+    &lt;load-on-startup&gt;1&lt;/load-on-startup&gt;
+&lt;/servlet&gt;
+</code></pre>
+
+<p>Remove mapping with '/faces/<em>' pattern and use mapping with '</em>.xhtml' pattern when calling your url.</p>
+
+<p>example: <a href=""http://example.com/page.xhtml"" rel=""nofollow"">http://example.com/page.xhtml</a></p>
+
+<p>and please dont use <strong>faces</strong> as a directory name because it is not a good directory name for a JSF app.</p>
+
+<p><strong>faces</strong> is a common url pattern since first days of jsf.</p>
+"
+"20883680","0","","","0","2014-01-02 13:06:25","","1505120","<p>An alternative is to apply Text To Columns with <code>@</code> and <code>,</code> as delimiters, delete every second column and stitch the results back together with concatenation, say something like:  </p>
+
+<pre><code>=G3&amp;"", ""&amp;H3&amp;"", ""&amp;I3&amp;"", ""&amp;J3&amp;"", ""&amp;K3&amp;"", ""&amp;L3
+</code></pre>
+"
+"20883682","0","","","0","2014-01-02 13:06:27","","852571","<p>I suggest to not store (potentially) binary, i.e. non-AlphaNumeric data, in an SQL database, especially not inside varchar(..) which will mess things up when you try to look at the the data.</p>
+
+<p>Instead, either Base64 or HEX encode it, HEX is probably the better option, for HEX it is very easy and native for MySQL:</p>
+
+<pre><code>INSERT INTO table SET Password = HEX(?)
+</code></pre>
+
+<p>The <code>?</code> is a placeholder for your Blowfish result</p>
+
+<p>To pick up the binary data from the database do:</p>
+
+<pre><code>INSERT UNHEX(Password) FROM table
+</code></pre>
+"
+"20883683","1","","","2","2014-01-02 13:06:30","","1936420","<p>And if you don't want to worry about so many different charset codings or if htmlentities doesn't work for you, here the alternative:
+I used mysqli DB connection (and PHPV5)  Form post for writing/inserting to MySQl DB.</p>
+
+<pre><code>$Notes = $_POST['Notes']; //can be text input or textarea.
+
+$charset = mysqli_character_set_name($link);  //only works for mysqli DB connection
+printf (""To check your character set but not necessary %s\n"",$charset);  
+
+$Notes = str_replace('""', '&amp;quot;', $Notes);  //double quotes for mailto: emails.  
+$von = array(""ä"",""ö"",""ü"",""ß"",""Ä"",""Ö"",""Ü"","" "",""é"");  //to correct double whitepaces as well
+$zu  = array(""&amp;auml;"",""&amp;ouml;"",""&amp;uuml;"",""&amp;szlig;"",""&amp;Auml;"",""&amp;Ouml;"",""&amp;Uuml;"",""&amp;nbsp;"",""&amp;#233;"");  
+$Notes = str_replace($von, $zu, $Notes);  
+echo "" Notes:"".$Notes.""&lt;br&gt;"" ;  
+$Notes = mysqli_real_escape_string($link, $Notes); //for recommended mysqli DB connection.
+//$Notes = mysql_real_escape_string($Notes); //for old deprecated mysql DB connection.
+
+// mysqli_real_escape_string Escapes special characters in a string for use in an SQL statement
+
+echo "" Notes:"".$Notes ;  //ready for inserting
+</code></pre>
+"
+"20883684","0","20883764","2","2","2014-01-02 13:06:37","","2546790","<p>When I try to change a paragraph using the innerHTML, it changes some characters. Look at the code:</p>
+
+<pre><code>texto.innerHTML = ""Durante as últimas 2 semanas, com que freqüência você foi incomodado/a por qualquer um dos problemas abaixo?"";
+</code></pre>
+
+<p>The output is this:
+Durante as �ltimas 2 semanas, com que freq��ncia voc� foi incomodado/a por qualquer um dos problemas abaixo?</p>
+
+<p>insted of this:
+Durante as últimas 2 semanas, com que freqüência você foi incomodado/a por qualquer um dos problemas abaixo? novo</p>
+
+<p>What are those question marks?</p>
+"
+"20883685","0","","","0","2014-01-02 13:06:46","","2500940","<p>You have missed , in your jquery selector.</p>
+
+<p>It should be : </p>
+
+<pre><code>$(""#div2, #div1"")
+</code></pre>
+"
+"20883686","0","20884115","2","0","2014-01-02 13:06:47","","231216","<p>I have an absolutely position ""hero"" section on my page. When scrolling down the page I'd like to have the content below scroll over the top of the hero section.</p>
+
+<p>To do this I update the <code>top</code> position of the lower content as you scroll down the page. However, doing so appears to push the hero unit off the page rather than simply scrolling over the top of it.</p>
+
+<p>HTML:</p>
+
+<pre><code>&lt;div class=""container""&gt;
+    &lt;section class=""hero""&gt;
+        &lt;div class=""hero-content""&gt;
+             &lt;h1&gt;loud noises.&lt;/h1&gt;
+             &lt;p class=""strapline""&gt;we make loud noises so you don't have to&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;div class=""inner""&gt;
+        &lt;section class=""feature-1""&gt;
+             &lt;h2&gt;Some awesome feature&lt;/h2&gt;
+        &lt;/section&gt;
+        &lt;section class=""feature-2""&gt;
+             &lt;h2&gt;Some awesome feature&lt;/h2&gt;
+        &lt;/section&gt;
+        &lt;footer&gt;&lt;/footer&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+
+<p>CSS:</p>
+
+<pre><code>.hero {
+    position: absolute;
+    background-color: #3498db;
+    text-align: center;
+    overflow: hidden;
+    z-index: 0;
+    background-color: #fff;
+    /*max-height: 768px; set the height limit here */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.inner {
+    position: relative;
+    top: 100%;
+    z-index: 100;
+}
+</code></pre>
+
+<p>JavaScript:</p>
+
+<pre><code>$(window).scroll(function () {
+    $('.inner').css('top', $('.hero').height() - $(window).scrollTop());
+});
+</code></pre>
+
+<p>Demo:</p>
+
+<p><a href=""http://fiddle.jshell.net/benfosterdev/LycXL/"" rel=""nofollow"">http://fiddle.jshell.net/benfosterdev/LycXL/</a></p>
+"
+"20883687","0","","1","0","2014-01-02 13:06:59","","704246","<p>I try to use session replication between 2 local instances (on same cluster, same node), using glassfish 4.</p>
+
+<p>I followed some tutorials and added following input in my web.xml file : 
+I also checked ""availability"" enabled when deploying war file on my target (the cluster).</p>
+
+<p>My application is based on Spring + JSF2 (@ManagedBeans from javax.faces.bean).
+(Mojarra 2.2.4, which I also override from original javax.faces.jar in the GF/modules directory).</p>
+
+<p>No weld, no jboss, no conversation.</p>
+
+<p>Everything works fine when deployed on glassfish admin server, even when deployed on a single instance (other instance shut down). It also works with the 2 instances when I disable 'Availability' when deploying the war file.</p>
+
+<p>But when trying to use native session replication behavior I get following trace and my application doesn't display (or even the instance crashes).</p>
+
+<p>It seems to be a session deserialization issue.</p>
+
+<p>web.xml :</p>
+
+<pre><code>&lt;context-param&gt;
+    &lt;param-name&gt;javax.faces.STATE_SAVING_METHOD&lt;/param-name&gt;
+    &lt;param-value&gt;Same issue either with 'server' or 'client'&lt;/param-value&gt;
+&lt;/context-param&gt;
+</code></pre>
+
+<p>I get following issue :</p>
+
+<pre><code>java.lang.ClassCastException: cannot assign instance of org.jboss.weld.context.conversation.ConversationIdGenerator to field org.springframework.aop.framework.AdvisedSupport.advisorChainFactory of type org.springframework.aop.framework.AdvisorChainFactory in instance of org.springframework.aop.framework.ProxyFactory
+    at java.io.ObjectStreamClass$FieldReflector.setObjFieldValues(ObjectStreamClass.java:2083)
+    at java.io.ObjectStreamClass.setObjFieldValues(ObjectStreamClass.java:1261)
+    at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:1995)
+    at java.io.ObjectInputStream.defaultReadObject(ObjectInputStream.java:499)
+    at org.springframework.aop.framework.AdvisedSupport.readObject(AdvisedSupport.java:550)
+    at sun.reflect.GeneratedMethodAccessor127.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:606)
+    at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1017)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1891)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:1989)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1913)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:1989)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1913)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:1989)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1913)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)
+    at java.util.HashMap.readObject(HashMap.java:1155)
+    at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:606)
+    at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1017)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1891)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)
+    at java.util.HashMap.readObject(HashMap.java:1155)
+    at sun.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:606)
+    at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1017)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1891)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.defaultReadFields(ObjectInputStream.java:1989)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1913)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)
+    at org.apache.catalina.session.StandardSession.readRemainingObject(StandardSession.java:2078)
+    at org.apache.catalina.session.StandardSession.readObject(StandardSession.java:1986)
+    at sun.reflect.GeneratedMethodAccessor130.invoke(Unknown Source)
+    at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+    at java.lang.reflect.Method.invoke(Method.java:606)
+    at java.io.ObjectStreamClass.invokeReadObject(ObjectStreamClass.java:1017)
+    at java.io.ObjectInputStream.readSerialData(ObjectInputStream.java:1891)
+    at java.io.ObjectInputStream.readOrdinaryObject(ObjectInputStream.java:1796)
+    at java.io.ObjectInputStream.readObject0(ObjectInputStream.java:1348)
+    at java.io.ObjectInputStream.readObject(ObjectInputStream.java:370)
+    at org.apache.catalina.session.StandardSession.deserialize(StandardSession.java:1272)
+    at org.apache.catalina.session.StoreBase.readSession(StoreBase.java:296)
+    at org.glassfish.web.ha.session.management.ReplicationStore.getSession(ReplicationStore.java:567)
+    at org.glassfish.web.ha.session.management.ReplicationStore.getSession(ReplicationStore.java:519)
+    at org.glassfish.web.ha.session.management.ReplicationStore.loadFromBackingStore(ReplicationStore.java:433)
+    at org.glassfish.web.ha.session.management.ReplicationStore.load(ReplicationStore.java:416)
+    at org.apache.catalina.session.PersistentManagerBase.doSwapIn(PersistentManagerBase.java:1215)
+    at org.apache.catalina.session.PersistentManagerBase.swapIn(PersistentManagerBase.java:1175)
+    at org.glassfish.web.ha.session.management.ReplicationManagerBase.findSession(ReplicationManagerBase.java:161)
+    at org.apache.catalina.connector.Request.doGetSession(Request.java:3218)
+    at org.apache.catalina.connector.Request.getSessionInternal(Request.java:3081)
+    at org.apache.catalina.connector.Request.unlockSession(Request.java:4665)
+    at org.apache.catalina.connector.CoyoteAdapter.doService(CoyoteAdapter.java:368)
+    at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:260)
+    at com.sun.enterprise.v3.services.impl.ContainerMapper.service(ContainerMapper.java:188)
+    at org.glassfish.grizzly.http.server.HttpHandler.runService(HttpHandler.java:191)
+    at org.glassfish.grizzly.http.server.HttpHandler.doHandle(HttpHandler.java:168)
+    at org.glassfish.grizzly.http.server.HttpServerFilter.handleRead(HttpServerFilter.java:189)
+    at org.glassfish.grizzly.filterchain.ExecutorResolver$9.execute(ExecutorResolver.java:119)
+    at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeFilter(DefaultFilterChain.java:288)
+    at org.glassfish.grizzly.filterchain.DefaultFilterChain.executeChainPart(DefaultFilterChain.java:206)
+    at org.glassfish.grizzly.filterchain.DefaultFilterChain.execute(DefaultFilterChain.java:136)
+    at org.glassfish.grizzly.filterchain.DefaultFilterChain.process(DefaultFilterChain.java:114)
+    at org.glassfish.grizzly.ProcessorExecutor.execute(ProcessorExecutor.java:77)
+    at org.glassfish.grizzly.nio.transport.TCPNIOTransport.fireIOEvent(TCPNIOTransport.java:838)
+    at org.glassfish.grizzly.strategies.AbstractIOStrategy.fireIOEvent(AbstractIOStrategy.java:113)
+    at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.run0(WorkerThreadIOStrategy.java:115)
+    at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy.access$100(WorkerThreadIOStrategy.java:55)
+    at org.glassfish.grizzly.strategies.WorkerThreadIOStrategy$WorkerThreadRunnable.run(WorkerThreadIOStrategy.java:135)
+    at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.doWork(AbstractThreadPool.java:564)
+    at org.glassfish.grizzly.threadpool.AbstractThreadPool$Worker.run(AbstractThreadPool.java:544)
+    at java.lang.Thread.run(Thread.java:724)
+</code></pre>
+
+<p>I really don't know why as I'm not using neither JBOSS nor any conversation behavior (or annotation).</p>
+
+<p>Thanks for your help.</p>
+"
+"20883688","4","","","0","2014-01-02 13:07:00","","558823","<p>The reason FParsec can't generate more useful error messages for your example is that you've defined the <code>ws</code> and <code>id</code> parsers using the <a href=""http://www.quanttec.com/fparsec/reference/charparsers.html#members.satisfy"" rel=""nofollow""><code>satisfy</code></a> primitive. Since you only specified a predicate function, FParsec doesn't know how to describe the expected input. The <a href=""http://www.quanttec.com/fparsec/users-guide/customizing-error-messages.html"" rel=""nofollow"">User's Guide</a> explains this issues and how to avoid it. In your code, you could e.g. use <code>satisfyL</code> or <a href=""http://www.quanttec.com/fparsec/reference/charparsers.html#members.many1SatisfyL"" rel=""nofollow""><code>many1SatisfyL</code></a> for the definitions.</p>
+
+<p>After fixing the <code>ws</code> and <code>id</code> parsers you'll quickly discover that your code doesn't properly parse the list because the whitespace parsing is messed up. Where possible, you should always parse whitespace as trailing whitespace, not as leading whitespace, because this avoids the need for backtracking. To fix your parser for the input you gave above, you could e.g. replace </p>
+
+<pre><code>sepEndBy1 (ws &gt;&gt;. whereCondition) (newline)
+</code></pre>
+
+<p>with </p>
+
+<pre><code>sepEndBy1 (whereCondition .&gt;&gt; ws) (newline &gt;&gt;. ws)
+</code></pre>
+
+<p>in the definition of <code>multiConditionWhereList</code>. </p>
+
+<p>Note that a non-empty error message list doesn't necessarily imply an error, as FParsec will generally collect the error messages of all parsers that were applied at the current position in the stream, even if the parser is ""optional"". This is probably the reason you were seeing the ""expected newline"", since a newline would have been accepted at that position.</p>
+"
+"20883689","2","","","3","2014-01-02 13:07:00","","2661118","<p>initialize the items in Array...</p>
+
+<pre><code>for (int i = 0; i &lt; listItemList.size(); i++) {
+        ListItemReminderSummary listItem = listItemList.get(i);
+        Log.i(""listItem.Car_Id"", listItem.Car_Type);
+        points[i] = new Arr();
+        points1[i].Car_Id = listItem.Car_Id;
+        points1[i].Car_Type = listItem.Car_Type;
+}
+</code></pre>
+"
+"20883690","28","","","1","2014-01-02 13:07:01","","2056772","<p><a href=""http://docs.opencv.org/modules/core/doc/operations_on_arrays.html#reduce"">reduce</a> should do the trick.</p>
+
+<pre><code>Mat row_mean, col_mean;
+reduce(img,row_mean, 0, CV_REDUCE_AVG);
+reduce(img,col_mean, 1, CV_REDUCE_AVG);
+</code></pre>
+"
+"20883692","0","","","0","2014-01-02 13:07:15","","2783016","<p>Just confirming your question first. Are you asking:</p>
+
+<blockquote>
+  <p>How can I use G-mail or some other mail client to deliver a new e-mail to a new recipient along with an intended message body based upon a subset of the original message with delivery instructions? Both the intended recipient and new message would be specified somewhere inside the original message body.</p>
+</blockquote>
+
+<p>If this is what you are suggesting, I believe you would be asking for trouble even considering this. What you would be essentially doing is creating an <a href=""http://en.wikipedia.org/wiki/Open_mail_relay"" rel=""nofollow"" title=""open mail relay"">open mail relay</a>. Mail relaying is not a good idea without some form of authentication and network level restrictions by IP, etc. Encoding a client to do this at that level would not be wise. For more information as to why this is a bad idea, see this link: 
+<a href=""http://en.wikipedia.org/wiki/Open_mail_relay"" rel=""nofollow"">http://en.wikipedia.org/wiki/Open_mail_relay</a></p>
+
+<p>I do hate to sound negative, but if you could explain your purpose here, we might be able to come up with a more acceptable, net-friendly secure alternative. :)</p>
+"
+"20883693","1","","","0","2014-01-02 13:07:30","","1039843","<p>Try this </p>
+
+<pre><code>$country[""china""] = array(
+  ""shortcode"" =&gt; ""CN"",
+  ""president"" =&gt; ""Xi Jinping"",
+  ""currency"" =&gt; ""Yuan"",
+  );
+
+$country[""america""] = array(
+  ""shortcode"" =&gt; ""US"",
+  ""president"" =&gt; ""Barack Obama"",
+  ""currency"" =&gt; ""Dollar"",
+  );
+
+$country[""russia""] = array(
+  ""shortcode"" =&gt; ""RU"",
+  ""president"" =&gt; ""Vladimir Putin"",
+  ""currency"" =&gt; ""Rubble"",
+  );
+
+
+foreach($country as $key=&gt;$val){
+    echo $val[""president""];
+}
+</code></pre>
+"
+"20883694","0","","","0","2014-01-02 13:07:39","","1113608","<p>ifconfig=""mymodule/general/is_enabled""
+ifconfig=""mymodule/frontend/can_show""</p>
+
+<p>why not create an additional config node
+ifconfig=""mymodule/frontend/is_enabled_can_show""  and depending on this value proceed.</p>
+"
+"20883695","0","20884479","2","1","2014-01-02 13:07:41","","1553519","<p>All, <code>Git tag xxxx</code> is add a tag . But I want to how to add a tag to a branch. thanks.</p>
+
+<p>Currently. I can switch the branch .</p>
+
+<pre><code>git checkout branchA
+git tag xxxx
+git push orgin --tags
+</code></pre>
+
+<p>Seems xxxx tag is add tag to the origin . right ? thanks.</p>
+"
+"21028265","1","","","0","2014-01-09 18:29:14","","266304","<p>I'm not sure what you're doing with <code>lag()</code> but it doesn't sound right. It sounds like exactly what you're after; <a href=""http://docs.oracle.com/cd/E11882_01/server.112/e26088/functions082.htm"" rel=""nofollow"">from the documentation</a>:</p>
+
+<blockquote>
+  <p><code>LAG</code> is an analytic function. It provides access to more than one row of a table at the same time without a self join.</p>
+</blockquote>
+
+<p>You want the previous call for each phone number, so you need to partition by <code>phone_no</code>, and order by <code>call_date</code>. This shows the previous value for all three fields:</p>
+
+<pre><code>select phone_no, call_id, call_date,
+  lag(phone_no) over (partition by phone_no order by call_date)
+    as prev_phone_no,
+  lag(call_id) over (partition by phone_no order by call_date)
+    as prev_call_id,
+  lag(call_date) over (partition by phone_no order by call_date)
+    as prev_call_date
+from call_detail
+order by call_date;
+</code></pre>
+
+<p>With the sample data you gave in a comment this gives:</p>
+
+<pre><code>PHONE_NO          CALL_ID CALL_DATE           PREV_PHONE_NO  PREV_CALL_ID PREV_CALL_DATE    
+-------------- ---------- ------------------- -------------- ------------ -------------------
+234534534               4 2013-01-11 20:11:03                                                 
+234534534               6 2013-01-11 20:11:03 234534534                 4 2013-01-11 20:11:03 
+234556777               2 2013-01-11 20:11:03                                                 
+234543453               7 2013-01-12 15:11:03                                                 
+234543453               5 2013-01-12 16:11:03 234543453                 7 2013-01-12 15:11:03 
+234543453               3 2013-01-12 18:11:03 234543453                 5 2013-01-12 16:11:03 
+234543453               1 2013-01-12 20:11:03 234543453                 3 2013-01-12 18:11:03 
+</code></pre>
+
+<p><a href=""http://www.sqlfiddle.com/#!4/1ab1d/1"" rel=""nofollow"">SQL Fiddle</a></p>
+
+<p>Which you can use to create a view (without an <code>order by</code> clause, and with only the columns you want).</p>
+"
+"21028267","0","","2","0","2014-01-09 18:29:16","","3178845","<p>I am trying the following code to import data in an active worksheet using VBA, with an Access file as a source.</p>
+
+<p>The Access table to import is called ""Table01"", I have a error message when defining the query (Set daoQueryDef = daoDB.QueryDefs(Text)): ""item not found in this collection"".</p>
+
+<p>Do you know where is the problem? In the synthax?</p>
+
+<pre><code>Sub Import()
+
+Dim daoDB As DAO.Database
+Dim daoQueryDef As DAO.QueryDef
+Dim daoRcd As DAO.Recordset
+
+Set daoDB = OpenDatabase(""C:\Users\Desktop\Database\Database.mdb"")&gt;
+Text = ""SELECT * FROM `Table01`""
+Set daoQueryDef = daoDB.QueryDefs(Text)
+
+Set daoRcd = daoQueryDef.OpenRecordset
+ThisWorkbook.Worksheets(""Import"").Range(""A4"").CopyFromRecordset daoRcd
+
+End Sub
+</code></pre>
+"
+"21028268","0","21028353","2","0","2014-01-09 18:29:20","","2214753","<p>I store in my Database emails, i query my db to return a list with all emails.Then in my activity i get them all to a String array (String[]) and then try to get them at a single string so to put them as recipients but at the end only takes my last email from the string.</p>
+
+<p>Here is my code:</p>
+
+<pre><code>                DatabaseHandler db = new DatabaseHandler(
+                    getApplicationContext());
+            ArrayList&lt;String&gt; array_from_db = db.Get_Students_Email();
+            String emails = """";
+
+            for (int i = 0; i &lt; array_from_db.size(); i++) {
+
+                 emails = emails + array_from_db.get(i).toString() + "";"";
+
+            }
+            db.close();
+
+            Intent in = new Intent(Intent.ACTION_SEND);
+            in.setType(""message/rfc822"");
+            in.putExtra(Intent.EXTRA_EMAIL, new String[] { emails });
+            in.putExtra(Intent.EXTRA_SUBJECT, ""subject of email"");
+            in.putExtra(Intent.EXTRA_TEXT, ""body of email"");
+            try {
+                startActivity(Intent.createChooser(in, ""Send mail...""));
+            } catch (android.content.ActivityNotFoundException ex) {
+                Toast.makeText(Main_Setting.this,
+                        ""There are no email clients installed."",
+                        Toast.LENGTH_SHORT).show();
+            }
+</code></pre>
+
+<p>I have tried also </p>
+
+<pre><code>in.putExtra(Intent.EXTRA_EMAIL, emails);
+</code></pre>
+
+<p>and uri parse but still nothing happen.</p>
+"
+"21028269","2","","","0","2014-01-09 18:29:30","","64644","<p>TFS Builds can be customized to do almost anything you can imagine.  Microsoft has provided pre-built templates to deploy to Azure, if you want to deploy elsewhere you will have to do the customization yourself.</p>
+
+<p>You can read about customizing TFS Builds from the ALM Ranger Build Guidance on CodePlex: <a href=""http://vsarbuildguide.codeplex.com/"" rel=""nofollow"">http://vsarbuildguide.codeplex.com/</a></p>
+"
+"21028270","4","","","0","2014-01-09 18:29:30","","560648","<p>I don't see any reason to go templating here</p>
+
+<p>In fact, by deleting the non-template overload you may wiggle your way out of some edge-case ambiguous calls that I can't think of right now, since non-templates take precedence over template instantiations. And thus make this work as desired in a majority of cases.</p>
+"
+"21028271","1","","","0","2014-01-09 18:29:39","","1457051","<p>@rawr, @joran and @SimonO'Hanlon are all spot-on. The native R solution would look something like:</p>
+
+<pre><code>a &lt;- runif(5)
+b &lt;- c(""1-Jan-13"", ""2-Jan-13"", ""3-Jan-13"", ""4-Jan-13"", ""5-Jan-13"")
+dd &lt;- data.frame(a, b=as.Date(b, format=""%d-%b-%y""))
+str(dd)
+## 'data.frame':    5 obs. of  2 variables:
+##  $ a: num  0.947 0.997 0.39 0.913 0.178
+##  $ b: Date, format: ""2013-01-01"" ...
+</code></pre>
+
+<p>Where <code>%b</code> is the short version of the month name and <code>%y</code> indicates year without century.</p>
+
+<p>OR</p>
+
+<p>You could install the spiffy <code>lubridate</code> package and use the <code>ymd()</code> function which is <em>really</em> good at figuring out what format a string is in.</p>
+
+<pre><code>install.packages(""lubridate"")
+library(lubridate)
+
+dd &lt;- data.frame(a, b=dmy(b))
+str(dd)
+## 'data.frame':    5 obs. of  2 variables:
+##  $ a: num  0.947 0.997 0.39 0.913 0.178
+##  $ b: POSIXct, format: ""2013-01-01"" ...
+</code></pre>
+
+<p>As long as whatever you're doing next is cool with a <code>POSIXct</code> type vs a <code>Date</code> type, you're golden.</p>
+
+<p>As @joran said, tho, it would not hurt to brush up on <code>?strptime</code>. </p>
+"
+"21028272","1","","","0","2014-01-09 18:29:41","","47453","<p>I suspect that your code is not running in the version of Python that you think it is. If you add the following test case:</p>
+
+<pre><code>def test_python_version(self):
+    import sys
+    assert sys.version_info[0:3] &gt;= (2,7,0)
+</code></pre>
+
+<p>If that test case fails, then you're not running on a version of Python new enough to contain <code>self.assertIn()</code>.</p>
+"
+"21028273","2","","","1","2014-01-09 18:29:50","","431938","<p>First, I'd be curious as to why the provided view controller is inadequate. The goal is to provide a minimal interface in which to accept credit cards.</p>
+
+<p>But, yes, these services are <a href=""https://developer.paypal.com/webapps/developer/docs/integration/direct/rest-payments-overview/"" rel=""nofollow"">publicly available</a>. A limited set of functionality (e.g. sale transaction) is possible by omitting the OAuth2 secret. </p>
+
+<p>However, you will still want to <a href=""https://developer.paypal.com/webapps/developer/docs/integration/mobile/verify-mobile-payment/"" rel=""nofollow"">verify the transaction</a> on your own server in order to avoid being spoofed by a malicious user.</p>
+"
+"21028274","0","21050715","1","2","2014-01-09 18:30:02","","1867078","<p>I have a range of documents imaged adn available in tiff, jpeg and pdf.</p>
+
+<p>Many have been transcribed and the transcriptions checked for accuracy. </p>
+
+<p>I want to create pdfs and wonder if there is a way to OCR the images and to correct to the verified transcriptions or to 'insert' verified transcription during the OCR process?</p>
+
+<p>I have access to Omnipage, Abbyy Finereader and Tesseract but I don't know if what I want to do is at all possible.</p>
+"
+"21028275","1","21028328","2","2","2014-01-09 18:30:03","","1255817","<p>I have a nested dictionary that looks like this:</p>
+
+<pre><code>{key1: {""A"": 1, ""B"": 2, ""C"": 3}, key2: {""A"": 2, ""B"": 2, ""C"": 2}, ...}
+</code></pre>
+
+<p>I would like to place the values of from this dictionary into an array, like this:</p>
+
+<pre><code>[{""A"": 1, ""B"": 2, ""C"": 3}, {""A"": 2, ""B"": 2, ""C"": 2}, ...]
+</code></pre>
+
+<p>How can I convert a nested dictionary into an array of dictionaries where each element in the array is the values from the original nested dictionary?</p>
+"
+"21028276","0","","","1","2014-01-09 18:30:06","","2266713","<p>You can <a href=""http://api.jquery.com/jQuery/#jQuery-selector-context"" rel=""nofollow"">specify a context for your selector</a>:</p>
+
+<pre><code>$('.figure &gt; img', $newElems).hide();
+</code></pre>
+"
+"21028277","0","","","2","2014-01-09 18:30:07","","1600854","<p>Use <code>.addClass()</code> to give a special class to all newly-added elements, and target that class selector rather than the more general <code>.figure &gt; img</code> selector (then <code>removeClass()</code>).</p>
+
+<p>You could alternately use the context selector parameter that Jason P's answer describes, or use the <code>.filter($newElems)</code> method which will function about the same way.</p>
+"
+"21028278","3","","1","1","2014-01-09 18:30:07","","424185","<p>So I'm working on a web application that has a fixed bar on the bottom. In order for this to behave like a truly fixed bottom bar, in mobile Safari it is necessary to use <code>position: fixed</code> on the content above it (with <code>bottom</code> set to the height of the bottom bar) and also set <code>-webkit-overflow-scrolling: touch</code> on this content in order for it to scroll as if it weren't fixed.</p>
+
+<p>The problem is that if Safari's bottom bar is hidden and then you try to click on our app's bottom bar, this will make Safari's own bottom bar appear, but without triggering a resize event which will effectively hide our app's bottom bar even though it has <code>position: fixed</code>. Safari's bottom bar normally goes away once you scroll the content, except that our content has <code>-webkit-overflow-scrolling: touch;</code> set, so it apparently doesn't trigger UI hiding.</p>
+
+<p>I'm looking for a way to either prevent Safari's bottom bar from popping up when clicking at the bottom of the page, or being able to hide the UI when scrolling, even if the content that is scrolled has <code>-webkit-overflow-scrolling: touch;</code> set. Thanks.</p>
+"
+"21028280","2","","1","1","2014-01-09 18:30:15","","727219","<p>I've got a spring application with thymeleaf templates deployed in a local tomcat7, and served to the outside world via an apache proxy. The base urls are:</p>
+
+<ul>
+<li>Tomcat: <a href=""http://some.ip.address:8080/my-application"" rel=""nofollow"">http://some.ip.address:8080/my-application</a></li>
+<li>Apache proxy: <a href=""http://www.appdomain.com"" rel=""nofollow"">http://www.appdomain.com</a></li>
+</ul>
+
+<p>The problem i've got is that if i link a css file in a template like:</p>
+
+<pre><code>&lt;!-- Bootstrap core CSS --&gt;
+&lt;link href=""../../../resources/vendor/bootstrap/css/bootstrap.css""
+    th:href=""@{/resources/vendor/bootstrap/css/bootstrap.css}""
+    rel=""stylesheet"" /&gt;
+</code></pre>
+
+<p>The generated code looks like:</p>
+
+<pre><code>&lt;!-- Bootstrap core CSS --&gt;
+&lt;link href=""/my-application/resources/vendor/bootstrap/css/bootstrap.css"" rel=""stylesheet"" /&gt;
+</code></pre>
+
+<p>So it works when accessed via localhost:8080 (tomcat), but not via proxy because of the generated '/my-application' part.</p>
+
+<p>Does anybody know how to fix this and make the application work ok in both environments?</p>
+"
+"21028281","2","","","0","2014-01-09 18:30:15","","2961244","<p>I just tried it:  created an activity, put another transparent activity above it so onPause gets called, and destroyed the paused activity.  The destroyed Activity disappears from the screen, and whatever was under it becomes visible, usually the home screen.</p>
+"
+"21028284","0","21029434","3","0","2014-01-09 18:30:29","2014-01-10 01:15:06","1280798","<p>I am in need of writing the line graph in Android, without using any Libraries or API. </p>
+
+<p>I have to write drawMethod for drawing line. Input would be the coordinates of XY.  I read this from the file. </p>
+"
+"21028285","0","21028566","1","4","2014-01-09 18:30:32","","967857","<p>This is probably a simple problem but I just can't see it.</p>
+
+<p>We have two tables, Login table and Notifications table.</p>
+
+<p>Each time a user wishes to recover his or her password, the user opens up the app to the browser, enters his or her email address and clicks the Recover password button.</p>
+
+<p>If the user does not exist on the database, a message is displayed to the user advising him or her that his or her account doesn't exist
+on our database. This works fine.</p>
+
+<p>If the info exists s/he is supposed to receive an email containing his or her password. This is where the problem is.</p>
+
+<p>The user is not receiving an email at all.</p>
+
+<p>In the code below, user's info is extracted from login table and inserted into notifications table.</p>
+
+<p>Then the Notifications table is queried and email sent out to users from this table.</p>
+
+<p>Why are we doing it this way?</p>
+
+<p>Because the database is outside our firewall and there is no way to send an email from the location of the app.</p>
+
+<p>Our only option is to use dbmail.</p>
+
+<p>My question is why isn't this stored procedure sending out email?</p>
+
+<p>It only sends to me because my email address is hardcoded.</p>
+
+<p>My code is below and your assistance is greatly appreciated.</p>
+
+<pre><code>ALTER PROCEDURE [dbo].[ForgorttenPWD]
+@LoginEmail  nvarchar(50) = ''
+ AS    
+ BEGIN
+SET NOCOUNT ON;
+ IF NOT EXISTS (SELECT 1 FROM [tblLogin]
+WHERE email = @LoginEmail)
+BEGIN
+   RAISERROR ('The email address you entered does not exist on our database. Please try another email address',16,1)
+   RETURN
+END
+INSERT into Notifications(mailContent, LoginId, FullName, email, Password, sender, Sent)
+ SELECT
+'This is a computer generated email message.
+Dear '+ FullName +':
+Please check your Mail Box for the password..
+Your UserName is: '+ email +'.
+Your Password is: '+ password +', 
+ LoginId,
+ FullName,
+ email,
+ Password,
+  'NoReply@myemail.com',
+'No'
+FROM [tblLogin]
+WHERE email = @LoginEmail
+ORDER BY LoginId DESC
+
+ Declare @email nvarchar(MAX),@content1 nvarchar(4000)
+     SELECT top 1 @email = @email+';'+Email, @content1 = mailcontent
+        FROM Notifications
+    WHERE sent = 'No' and email=@LoginEmail
+
+EXEC msdb.dbo.sp_send_dbmail
+@profile_name = 'The Registrations Office', -- defined email profile or static info
+@recipients = @email, -- your email
+@blind_copy_recipients = 'myemail@mycompany.com',
+@subject = 'Your Account Details',
+@body = @content1;
+Update Notifications SET Sent = 'Yes' WHERE Sent = 'No'
+END
+</code></pre>
+"
+"21028286","0","","1","1","2014-01-09 18:30:38","","3178842","<p>I know principially how to create a editable pdf cell with itext. But in some case the editable cell could only be reached with tab key. It cannot be clicked.</p>
+
+<p>What could be the reason? It seems to be associated with positioning or coordinating problems (the rectangles x/y values). But perhaps its an internal itext error.</p>
+
+<pre><code>public void cellLayout(PdfPCell cell, Rectangle rectangle, PdfContentByte[] canvases) {
+    if (this.enable) {
+        final PdfWriter writer = canvases[0].getPdfWriter();
+        final TextField textField = new TextField(writer, rectangle, String.format(""text_%s"", this.fieldname));
+        textField.setOptions(BaseField.EDIT);
+        try {
+            final PdfFormField field = textField.getTextField();
+            field.setFieldFlags(PdfFormField.FF_EDIT);
+            writer.addAnnotation(field);
+        } catch (final IOException ioe) {
+            throw new ExceptionConverter(ioe);
+        } catch (final DocumentException de) {
+            throw new ExceptionConverter(de);
+        }
+    }
+}
+</code></pre>
+"
+"21028287","4","","2","3","2014-01-09 18:30:42","","2607501","<p>So this is what we're looking at, I want to be able to pass in a parameter into my fetch clause so that I can have a query with a custom FETCH amount.</p>
+
+<p>From what i have read in other SOs, this, sadly, is not available via DB2 database. However, the answers I've seen haven't been very good so I am asking the question for my specific situation.</p>
+
+<p>Other options I have tried that DO work:</p>
+
+<ul>
+<li>Concatenating my String statements to create my custom query.</li>
+<li>Instead of using a FETCH, use a WHERE col_1 BETWEEN value1 AND value2</li>
+<li>As commented by @bhamby, you can also replace a BETWEEN stmt by using > and &lt; within a WHERE clause</li>
+</ul>
+
+<p>To give you a basic example of what I am looking for (I'm using Spring JDBC with named parameters btw)</p>
+
+<pre><code>private static final String SQL_FETCH_NEXT = """"
+    + ""SELECT * "" 
+    + ""FROM ( SELECT ""
+    + ""     (ROW_NUMBER() OVER(ORDER BY ID, AGE)) AS RUNNING_NO, ID, NAME, AGE ""
+    + ""         FROM DATABASE1.TABLE1 PERSON ""
+    + ""     ) AS TABLE_ONE ""
+    + ""WHERE TABLE_ONE.RUNNING_NO &gt; :rowNumber ""
+    + ""ORDER BY TABLE_ONE.RUNNING_NO ""
+    + ""FETCH FIRST :fetchCount ROWS ONLY "";
+</code></pre>
+
+<p>And so, per my query above (which doesn't work due to the :fetchCount) how can I get a custom param (or an descent substitute) for the FETCH amount?</p>
+"
+"21028289","1","","","1","2014-01-09 18:30:49","","1529195","<p>Along with the answers above, it is worthy to note that UICollectionView doesn't have the sticky section header views that UITableView does. This is going to make your table-like collection views not look like genuine counterpart. This would be particularly annoying if you have large sections.</p>
+"
+"21028290","3","","","5","2014-01-09 18:30:50","","2824390","<p>As stated already, <a href=""http://github.com/Knockout-Contrib/Knockout-Validation"" rel=""nofollow"">the validation plugin</a> will be the most elegant, less re-inventive solution. </p>
+
+<p><strong>Edit:</strong> After commentary <a href=""http://jsfiddle.net/origineil/5Cjye/"" rel=""nofollow"">implementation</a> utilizing validation plugin</p>
+
+<p>With that aside, you have a couple options. </p>
+
+<ul>
+<li><p>If you are confident the contact object will always contain only required fields, a not very robust implementation would be iterate over the properties of the contact ensuring each has some value.</p></li>
+<li><p>A little more robust, but still lacking the elegance of the plugin, implementation would be to maintain an array of required fields and use that array for validation. You can reference <a href=""http://jsfiddle.net/origineil/8SKbk/"" rel=""nofollow"">my example</a> for this setup. Essentially, each required property is mapped to observables. Changes made to the value of any observable property triggers (via a <code>subscription</code>) a mutation call for a dummy observable that is used in a <code>computed</code>. This is required since a computed can't call <code>valueHasMutated</code>. The mutation call triggers the computed to reevaluate, thus updating the UI.</p></li>
+</ul>
+"
+"21028292","1","","0","1","2014-01-09 18:30:55","","522728","<p>i want to do is </p>
+
+<p>LiveCam -> filter1 = FilteredOp1</p>
+
+<p>LiveCam -> filter2 = FilteredOp2</p>
+
+<p>FilteredOp1 + FilteredOp2 --> on real device screen</p>
+
+<p>so basically i want to process camera in two filters and whatever is the output should be given to camera
+initially i thout <strong>GPUImageFilterGroup</strong> would help but after some experiments i realised its for chaining and not mixing.i saw some code where people are blending saved video with live cam but thats not what i want</p>
+"
+"21028294","0","21029444","1","2","2014-01-09 18:30:58","","2741744","<p>The following url is going to get vertical-oriented tree using d3. </p>
+
+<p><a href=""https://stackoverflow.com/questions/19444293/how-to-get-the-vertically-oriented-tree-using-d3-js"">How to get the vertically-oriented tree using d3.js</a></p>
+
+<p>I followed the below answered :</p>
+
+<p><a href=""https://i.stack.imgur.com/EDsDY.png"" rel=""nofollow noreferrer"">http://i.stack.imgur.com/EDsDY.png</a></p>
+
+<p>My requirement is to draw the above one in reverse order with marker in each link in the middle of the link. Please suggest a proper valid solution for this requirement.</p>
+
+<h2>Tried so far</h2>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Test&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script type=""text/javascript"" src=""d3.v2.min.js""&gt;&lt;/script&gt;
+&lt;script type=""text/javascript"" src=""jquery-2.0.3.min.js""&gt;&lt;/script&gt;
+&lt;script&gt;
+
+var margin = {top: 100, right: 50, bottom: 100, left: 50},
+    width = 2200 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
+
+var tree = d3.layout.tree()
+    .separation(function(a, b) { return a.parent === b.parent ? 1 : 1.2; })
+    .children(function(d) { return d.parents; })
+    .size([width, height]);
+
+var svg = d3.select(""body"")
+    .attr(""bgcolor"", ""white"")
+    .append(""svg"")
+    .attr(""width"", width + margin.left + margin.right)
+    .attr(""height"", height + margin.top + margin.bottom)
+    .append(""g"")
+    .attr(""transform"", ""translate("" + margin.left + "","" + margin.top + "")"");
+
+var nodes = tree.nodes(getJsonData());
+
+var node = svg.selectAll("".node"")
+    .data(nodes)
+    .enter()
+    .append(""g"");
+
+node.append(""rect"")
+    .attr(""width"", 145)
+    .attr(""height"", 80)
+    .attr(""fill"", ""#DFF0F0"")
+    .attr(""stroke"", ""black"")
+    .attr(""stroke-width"", ""1"")
+    .attr(""x"", function(d) { return d.x - 70; })
+    .attr(""y"", function(d) { return height - d.y - 40; });
+
+node.append(""text"")
+    .attr(""font-size"", ""7px"")
+    .attr(""font-weight"", ""bold"")
+    .attr(""fill"", ""#181A1A"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return height - d.y - 15; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.accountId; });
+
+node.append(""text"")
+    .attr(""font-size"", ""8px"")
+    .attr(""fill"", ""blue"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return 10 + height - d.y; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.branchName; });
+
+node.append(""text"")
+    .attr(""font-size"", ""7px"")
+    .attr(""fill"", ""grey"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return 25 + height - d.y; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.currency; });
+
+node.append(""text"")
+    .attr(""font-size"", ""6px"")
+    .attr(""fill"", ""grey"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return 35 + height - d.y; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.country; });
+
+node.append(""text"")
+    .attr(""font-size"", ""12px"")
+    .attr(""font-weight"", ""bold"")
+    .attr(""fill"", ""#181A1A"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return 7 + height - d.y; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.finIns; });
+
+node.append(""text"")
+    .attr(""font-size"", ""11px"")
+    .attr(""font-weight"", ""bold"")
+    .attr(""fill"", ""#181A1A"")
+    .attr(""x"", function(d) { return d.x; })
+    .attr(""y"", function(d) { return 7 + height - d.y; })
+    .style(""text-anchor"", ""middle"")
+    .text(function(d) { return d.customerName; });
+
+var link = svg.selectAll("".link"")
+    .data(tree.links(nodes))
+    .enter()
+    .insert(""path"", ""g"")
+    .attr(""fill"", ""none"")
+    .attr(""stroke"", ""#000"")
+    .attr(""stroke"", ""#000"")
+    .attr(""shape-rendering"", ""crispEdges"")
+    .attr(""d"", connect);
+
+function connect(d, i) {
+    return     ""M"" + d.source.x + "","" + (height - d.source.y)
+             + ""V"" + (height - (3*d.source.y + 4*d.target.y)/7)
+             + ""H"" + d.target.x
+             + ""V"" + (height - d.target.y);
+};
+
+
+function getJsonData() {
+    return {  
+        ""customerName"" : ""ACC"",
+         parents: [
+              {""finIns"" : ""child"",
+             parents: [
+        {
+        ""accountId"": ""024"",
+        ""branchName"": ""AMSTERDAM"",
+        ""currency"": ""USD"",
+
+        ""country"": ""Netherlands""
+
+    },
+    {
+        ""accountId"": ""000001"",
+        ""branchName"": ""RR, N.A."",
+        ""currency"": ""USD"",
+
+        ""country"": ""United States""
+
+    }
+]},] 
+}; 
+};
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+"
+"21028297","0","","","0","2014-01-09 18:31:09","","680909","<p>Here is a solution for your problems <a href=""http://jsfiddle.net/trixta/E7VtD/"" rel=""nofollow"">http://jsfiddle.net/trixta/E7VtD/</a></p>
+
+<ol>
+<li>Use change isntead of input event. input event is great, but does not apply to input[type=file].</li>
+<li>You should not override checkValidity</li>
+<li>Use setCustomValidity on dom ready + every change</li>
+<li>use reportValidity, if available, to report errors or mimic reportValditity by clicking on a submit button</li>
+</ol>
+
+<p>Here is a simple method to make setCustomValidity simpler:</p>
+
+<pre><code>//setCustomValidity is stupid so we improve by adding setCustomValidityRule
+$.fn.setCustomValidityRule = function (type, rule) {
+    var testRule = function () {
+        //only if it's valid or we have set the message our own
+        if ($(this).is(':valid') || $.data(this, 'customErrorType' + type)) {
+            var message = rule(this);
+            this.setCustomValidity(message);
+            if (message) {
+                $.data(this, 'customErrorType' + type, message)
+            } else {
+                $.removeData(this, 'customErrorType' + type);
+            }
+        }
+    };
+    return this
+    //invoke initially
+    .each(testRule)
+    //and on every change
+    .on('customchange.customerror' + type + ' change.customerror' + type, testRule);
+};
+</code></pre>
+
+<p>And here is a method to make reportValidity work in current browsers:</p>
+
+<pre><code>$.fn.reportValidity = function () {
+    return this.each(function () {
+        var form;
+        if (this.reportValidity) {
+            this.reportValidity();
+        } else {
+            form = $($.prop(this, 'form')).add(this).filter('form');
+            //checkvalidity is obtrusive sometimes so we use :invalid
+            if($(':invalid', form).length){
+            $('&lt;input type=""submit"" /&gt;')
+                .css({
+                    position: 'absolute',
+                    left: '-99999px'
+                })
+                .appendTo(form)
+                .click()
+                .remove();
+            }
+        }
+    });
+};
+</code></pre>
+"
